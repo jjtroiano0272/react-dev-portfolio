@@ -7,6 +7,7 @@ import $ from 'jquery';
 import './index.css';
 import './components/common/rainbow-spin-loader.css';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ThemeProvider } from './components/ThemeProvider';
 
 // Collapses Navbar when you click outside its boundaries.
 $(document).click(event => {
@@ -38,7 +39,9 @@ ReactDOM.render(
       clientId={clientId}
       redirectUri={window.location.origin}
     >
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </Auth0Provider>
   </Router>,
   document.getElementById('root')

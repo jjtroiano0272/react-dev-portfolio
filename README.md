@@ -1,6 +1,6 @@
 ## Additions (+)
 
-- [ ] \
+- [ ]
 
 ## Things to look out for/Notes
 

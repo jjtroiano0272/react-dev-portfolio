@@ -11,20 +11,19 @@ import { nanoid } from 'nanoid';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Paper from '@mui/material/Paper';
 import ReactTooltip from 'react-tooltip';
-import Navbar from './components/Navbar-MUI';
+import Navbar from './components/Navbar-Bootstrap';
 import About from './components/About';
 import Home from './components/Home';
-// import { ThemeContext } from './components/ThemeProvider';
 import UserProfile from './components/UserProfile';
+import { ThemeContext } from './components/ThemeProvider';
 
 export default function App() {
   const [data, setData] = useState();
+  const { darkMode, toggleDarkMode } = useContext(ThemeContext);
 
-  // const { darkMode, toggleDarkMode } = useContext(ThemeContext);
-
-  const [toggleDark, setToggleDark] = useState(false);
+  // const [toggleDark, setToggleDark] = useState(false);
+  // Theme settings used for MUI
   const theme = createTheme({
-    // Theme settings
     palette: {
       // type: toggleDark ? 'dark' : 'light',
       type: 'dark',
@@ -32,15 +31,13 @@ export default function App() {
   });
 
   return (
-    <ThemeProvider theme={theme}>
-      <Paper style={{ height: '100vh' }}>
-        <Navbar toggleDark={toggleDark} setToggleDark={setToggleDark} />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/my-profile' element={<UserProfile />} />
-        </Routes>
-      </Paper>
-    </ThemeProvider>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/my-profile' element={<UserProfile />} />
+      </Routes>
+    </>
   );
 }
