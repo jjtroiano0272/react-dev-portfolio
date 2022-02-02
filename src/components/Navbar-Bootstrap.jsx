@@ -64,7 +64,9 @@ export default function Navbar() {
     // <h5 class="my-0 mr-md-auto font-weight-normal">LOGO</h5>
 
     <div className='d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3'>
-      <h4 className='ribbon'>DRAFT</h4>
+      <p className='ribbon small'>
+        <small>Redesign in progess</small>
+      </p>
       {/* TODO: Offload and just call it darkMode switch? It condenses down to one line of code */}
       {/* <Tooltip
         title={

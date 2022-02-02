@@ -171,16 +171,17 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateX(30%) translateY(0%) rotate(45deg);
+  transform: translateX(15%) translateY(-10%) rotate(45deg);
   transform-origin: top left;
   z-index: 100;
+  font-size: 0.5em;
 }
 .ribbon:before,
 .ribbon:after {
   content: '';
   position: absolute;
   top: 0;
-  margin: 0 -1px; /* tweak */
+  margin: 0 -0.8px; /* tweak */
   width: 120%;
   height: 100%;
   background: #219f94;
