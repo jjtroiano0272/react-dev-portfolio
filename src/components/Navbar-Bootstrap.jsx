@@ -17,7 +17,10 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-
+import Select from '@mui/material/Select';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -57,28 +60,54 @@ export default function Navbar() {
   );
 
   return (
-    <nav className='navbar'>
-      <div className='container'>
-        <Tooltip
-          title={
-            !darkMode
-              ? 'Switch theme to dark mode'
-              : 'Switch theme to light mode'
-          }
-        >
-          <FormGroup>
-            <FormControlLabel
-              className='mx-2'
-              control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-              label=''
-              onClick={toggleDarkMode}
-              data-tip
-              data-for='lightDarkModeTip'
-              type='checkbox'
-            />
-          </FormGroup>
-        </Tooltip>
-      </div>
-    </nav>
+    // <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    // <h5 class="my-0 mr-md-auto font-weight-normal">LOGO</h5>
+
+    <div className='d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3'>
+      <h4 className='ribbon'>DRAFT</h4>
+      {/* TODO: Offload and just call it darkMode switch? It condenses down to one line of code */}
+      {/* <Tooltip
+        title={
+          !darkMode ? 'Switch theme to dark mode' : 'Switch theme to light mode'
+        }
+      >
+        <FormGroup>
+          <FormControlLabel
+            className='mx-2'
+            control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
+            label=''
+            // onClick={toggleDarkMode}
+            data-tip
+            data-for='lightDarkModeTip'
+            type='checkbox'
+          />
+        </FormGroup>
+      </Tooltip> */}
+
+      <nav className='navbar navbar-expand-lg navbar-light navbar-fixed-top mb-5'>
+        <div className='container'>
+          <ul className='flex-row navbar-nav mr-auto'>
+            <li className='nav-item px-4'>
+              <a href='https://github.com/jjtroiano0272' className='nav-link'>
+                <GitHubIcon />
+              </a>
+            </li>
+            <li className='nav-item px-4'>
+              <a
+                href='https://www.linkedin.com/in/jonathan-troiano/'
+                className='nav-link'
+              >
+                <LinkedInIcon />
+              </a>
+            </li>
+            <li className='nav-item px-4'>
+              <a href='#contact' className='nav-link'>
+                <EmailIcon />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   );
 }

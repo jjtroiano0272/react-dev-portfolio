@@ -6,16 +6,18 @@ export default function Footer(props) {
       <div className='container'>
         <div>
           <p>
-            <small className='text-secondary mb-2'>© 2021 J. Troiano</small>
+            <small className='text-secondary mb-2'>
+              &#169; 2021 J. Troiano
+            </small>
           </p>
         </div>
         <div className='ms-auto'>
           <p>
             <a
               href='https://www.streamlinehq.com'
-              className='pointer text-secondary'
+              className='text-secondary text-decoration-none'
             >
-              Free Design Thinking SVG illustration by Streamline View Profile
+              Designs by Streamline
             </a>
           </p>
         </div>

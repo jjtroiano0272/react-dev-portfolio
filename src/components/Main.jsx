@@ -7,54 +7,48 @@ import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from '@mui/icons-material/Email';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { CardActionArea } from '@mui/material';
+import ShareIcon from '@mui/icons-material/Share';
 import * as loader from './common/rainbowSpinLoader';
 import { ContactForm } from './ContactForm';
+import Navbar from './Navbar-Bootstrap';
 import illustrationThinking from '../image/streamline-icon-design-thinking@250x250.svg';
 import illustrationBusinessDeal from '../image/streamline-icon-business-deal@250x250.svg';
 import illustrationCoffeeTea from '../image/streamline-icon-coffee-tea@250x250.svg';
+import triviaAppScreenshotLight from '../image/project images/trivia-app-light.png';
+import triviaAppScreenshotDark from '../image/project images/trivia-app-dark.png';
 // User-generated component imports go here
 
 export default function Main(props) {
   return (
     <>
-      <div className='section primary'>
-        <nav className='navbar navbar-expand-lg navbar-light navbar-fixed-top'>
-          <div className='container'>
-            <ul className='flex-row navbar-nav mr-auto'>
-              <li className='nav-item'>
-                <a href='' className='nav-link'>
-                  <GitHubIcon />
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a href='' className='nav-link'>
-                  <LinkedInIcon />
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a href='#contact' className='nav-link'>
-                  <EmailIcon />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      {/* VERSION 1 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/}
+      <div className='section bg-color-primary'>
+        {/* VERSION 2 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/}
+        {/* <div className='section bg-color-primary'>
+        <div className='d-flex flex-column flex-md-row align-items center'>
+          <nav className='mr-md-3'>
+            <a className='nav-item nav-link' href=''>
+              <GitHubIcon />
+            </a>
+            <a href=''>Item2</a>
+            <a href=''>Item3</a>
+          </nav>
+        </div> */}
 
-        <div className='col-xs-12 col-sm-6'></div>
-        <h1>Hi! I'm &#123;WebDev&#125; Jonathan</h1>
+        <Navbar />
+
+        <h1>Hi! I'm &#123; WebDev &#125; Jonathan</h1>
         <p className='text-muted'>some buzzwords go here</p>
         <img src={illustrationThinking} alt='' />
       </div>
+
       <div className='wave'>
         <svg
           data-name='Layer 1'
@@ -78,49 +72,100 @@ export default function Main(props) {
           ></path>
         </svg>
       </div>
+
       <div className='section'>
         <h2>Projects</h2>
-        <img src={illustrationBusinessDeal} alt='' />
-        {/* https://images.credly.com/images/68468004-5a85-4f3b-bc58-590773979486/AWS-CloudPractitioner-2020.png
-        https://education.oracle.com/file/general/Oracle-Certification-badge_OC-JuniorAssociate.png
-
-        https://react-trivia-app-jjt.netlify.app
-        https://react-tenzies-app.netlify.app
-        https://react-notes-mde.netlify.app
-        https://react-ml-meme-generator.netlify.app
-        https://travel-experiences-mockup.herokuapp.com/
-        https://shrouded-spire-70852.herokuapp.com/
-        https://studio-mockup.netlify.app https://counter-app.pages.dev
-        https://58c79bb9.tutorial-particlesystem.pages.dev
-        https://tutorial-nebula.pages.dev */}
-        <div className='col-xs-12 col-sm-6'>
-          {/* TODO: Offload into its own component. this code implementation is uggo! */}
-          <a href='https://react-trivia-app-jjt.netlify.app'>
-          <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
+        <img
+          src={illustrationBusinessDeal}
+          alt='Two people shake hands in a business deal, superimposed on a contract and dollar sign.'
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-          </a>
+
+        <div className='row'>
+          <div className='col-xs-12 col-md-4'>
+            {/* TODO: Offload into its own component. this code implementation is uggo! */}
+            <Card sx={{ maxWidth: 10000 }}>
+              <a
+                href='https://react-trivia-app-jjt.netlify.app'
+                className='text-reset text-decoration-none'
+              >
+                <CardActionArea>
+                  <CardMedia
+                    component='img'
+                    height='300'
+                    image={triviaAppScreenshotLight}
+                    alt='Trivia App Screenshot'
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant='h5' component='div'>
+                      RESTful API Trivia
+                    </Typography>
+                    <Typography variant='body2' color='text.secondary'>
+                      Test your trivia knowledge by pulling random questions
+                      from the OpenTrivia API!
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </a>
+              <CardActions>
+                <Button size='small' color='primary'>
+                  <ShareIcon />
+                </Button>
+                <Button size='small' color='primary'>
+                  <a
+                    href='https://github.com/jjtroiano0272/react-quiz-app'
+                    className='text-reset text-decoration-none'
+                  >
+                    <GitHubIcon />
+                  </a>
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
         </div>
-        
-        <a href=''></a>
+
+        <div className='row'>
+          <div className='col-xs-12 col-md-4'>
+            <Card sx={{ maxWidth: 10000 }}>
+              <a
+                href='https://react-trivia-app-jjt.netlify.app'
+                className='text-reset text-decoration-none'
+              >
+                <CardActionArea>
+                  <CardMedia
+                    component='img'
+                    height='300'
+                    image={triviaAppScreenshotLight}
+                    alt='Trivia App Screenshot'
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant='h5' component='div'>
+                      RESTful API Trivia
+                    </Typography>
+                    <Typography variant='body2' color='text.secondary'>
+                      Test your trivia knowledge by pulling random questions
+                      from the OpenTrivia API!
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </a>
+              <CardActions>
+                <Button size='small' color='primary'>
+                  <ShareIcon />
+                </Button>
+                <Button size='small' color='primary'>
+                  <a
+                    href='https://github.com/jjtroiano0272/react-quiz-app'
+                    className='text-reset text-decoration-none'
+                  >
+                    <GitHubIcon />
+                  </a>
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
+        </div>
       </div>
-      <div className='section secondary'>
+      <div className='section bg-color-secondary'>
         <h2>Skills</h2>
         <img src={illustrationCoffeeTea} alt='' />
       </div>
@@ -131,7 +176,7 @@ export default function Main(props) {
           <li>Oracle</li>
         </ul>
       </div>
-      <div className='section tertiary'>
+      <div className='section bg-color-tertiary'>
         <h2>About</h2>
         <p className='text-muted'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
@@ -148,7 +193,7 @@ export default function Main(props) {
           distinctio eum!
         </p>
       </div>
-      <div className='section quaternary' id='contact'>
+      <div className='section bg-color-quaternary' id='contact'>
         <h2 className='text-light'>Contact</h2>
         <ContactForm />
       </div>

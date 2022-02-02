@@ -96,8 +96,8 @@ input.search-dark:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 400px;
-  padding: 100px 20vw;
+  /* min-height: 400px; */
+  /* padding: 100px 20vw; */
 }
 
 .spacer {
@@ -144,19 +144,51 @@ input.search-dark:focus {
   fill: #ffffff;
 }
 
-.primary {
+.bg-color-primary {
   background-color: #e8e8a6;
 }
-.secondary {
+.bg-color-secondary {
   background-color: #f2f5c8;
 }
-.tertiary {
+.bg-color-tertiary {
   background-color: #c1deae;
 }
-.quaternary {
+.bg-color-quaternary {
   background-color: #219f94;
 }
 
 nav {
   z-index: 100;
+}
+
+/* Allows us to put a temporary 'in progress' ribbon */
+.ribbon {
+  margin: 0;
+  padding: 0;
+  background: #219f94;
+  color: white;
+  padding: 1em 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(30%) translateY(0%) rotate(45deg);
+  transform-origin: top left;
+  z-index: 100;
+}
+.ribbon:before,
+.ribbon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  margin: 0 -1px; /* tweak */
+  width: 120%;
+  height: 100%;
+  background: #219f94;
+}
+.ribbon:before {
+  right: 100%;
+}
+
+.ribbon:after {
+  left: 100%;
 }

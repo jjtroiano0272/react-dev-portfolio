@@ -21,7 +21,10 @@ QuickLinks:
 
 - https://images.credly.com/images/68468004-5a85-4f3b-bc58-590773979486/AWS-CloudPractitioner-2020.png
 - https://education.oracle.com/file/general/Oracle-Certification-badge_OC-JuniorAssociate.png
-- https://react-trivia-app-jjt.netlify.app
+
+- https://github.com/jjtroiano0272
+- https://www.linkedin.com/in/jonathan-troiano/
+
 - https://react-tenzies-app.netlify.app
 - https://react-notes-mde.netlify.app
 - https://react-ml-meme-generator.netlify.app
