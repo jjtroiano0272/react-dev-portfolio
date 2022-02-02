@@ -90,3 +90,73 @@ input.search-dark:focus {
 .mui-nav-link:hover {
   color: inherit;
 }
+
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 100px 20vw;
+}
+
+.spacer {
+  aspect-ratio: 540/960;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1-top {
+  background-image: url('./image/layered-waves-haikei-top-540x960.svg');
+}
+.layer1-bottom {
+  background-image: url('./image/layered-waves-haikei-bottom-540x960.svg');
+}
+
+.curve {
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  bottom: 0;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(160% + 1.3px);
+  height: 99px;
+  transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+  fill: #ffffff;
+}
+
+.primary {
+  background-color: #e8e8a6;
+}
+.secondary {
+  background-color: #f2f5c8;
+}
+.tertiary {
+  background-color: #c1deae;
+}
+.quaternary {
+  background-color: #219f94;
+}
+
+nav {
+  z-index: 100;
+}

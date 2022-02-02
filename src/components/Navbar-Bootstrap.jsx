@@ -38,7 +38,6 @@ export default function Navbar() {
   const pages = ['Products', 'Pricing', 'Blog'];
   const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-
   // Switch theme
   useHotkeys(
     'cmd+/, ctrl+/',
@@ -58,82 +57,27 @@ export default function Navbar() {
   );
 
   return (
-    <nav className='navbar navbar-expand-lg navbar-light mb-4'>
+    <nav className='navbar'>
       <div className='container'>
-        <NavLink to='/' className='navbar-brand'>
-          <img src={logo} alt='Brand logo' id='nav-logo' />
-        </NavLink>
-        <button
-          className='navbar-toggler'
-          type='button'
-          data-toggle='collapse'
-          data-target='#navbarSupportedContent'
-          aria-controls='navbarSupportedContent'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
+        <Tooltip
+          title={
+            !darkMode
+              ? 'Switch theme to dark mode'
+              : 'Switch theme to light mode'
+          }
         >
-          <span className='navbar-toggler-icon'></span>
-        </button>
-
-        <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-          <ul className='navbar-nav mr-auto'>
-            {!isAuthenticated ? (
-              <li className='nav-item' onClick={() => loginWithRedirect()}>
-                <Link to='' className='nav-link'>
-                  Login
-                </Link>
-              </li>
-            ) : (
-              <li className='nav-item'>
-                <Link to='/my-profile' className='nav-link'>
-                  My Profile: <strong>{user.name.substring(0, user.name.indexOf('@'))}</strong>
-                </Link>
-              </li>
-            )}
-
-            <li className='nav-item'>
-              <Link to='/about' className='nav-link'>
-                About
-              </Link>
-            </li>
-
-            <li className='nav-item'>
-              <a className='nav-link disabled' href='#'>
-                {/* Conditional logic here or private-users only stuff */}
-                Disabled
-              </a>
-            </li>
-          </ul>
-          <form className='form-inline my-2 my-lg-0 ms-md-auto'>
-            <input
-              className='form-control mr-sm-2'
-              type='search'
-              ref={inputRef}
-              placeholder='Search'
-              aria-label='Search'
+          <FormGroup>
+            <FormControlLabel
+              className='mx-2'
+              control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
+              label=''
+              onClick={toggleDarkMode}
+              data-tip
+              data-for='lightDarkModeTip'
+              type='checkbox'
             />
-          </form>
-
-          <Tooltip
-            title={
-              !darkMode
-                ? 'Switch theme to dark mode'
-                : 'Switch theme to light mode'
-            }
-          >
-            <FormGroup>
-              <FormControlLabel
-                className='mx-2'
-                control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-                label=''
-                onClick={toggleDarkMode}
-                data-tip
-                data-for='lightDarkModeTip'
-                type='checkbox'
-              />
-            </FormGroup>
-          </Tooltip>
-        </div>
+          </FormGroup>
+        </Tooltip>
       </div>
     </nav>
   );

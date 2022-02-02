@@ -25,17 +25,17 @@ export const ThemeProvider = ({ children }) => {
     // TODO: This would be lovely with a more elegant approach!
     // If it's light mode, remove *-dark classes.
     if (!darkMode) {
-      document.querySelector('nav').classList.remove('navbar-dark');
-      document
-        .querySelector('input.form-control')
-        .classList.remove('search-dark');
-      document.getElementById('nav-logo').classList.remove('color-invert');
+      // document.querySelector('nav').classList.remove('navbar-dark');
+      // document
+      //   .querySelector('input.form-control')
+      //   .classList.remove('search-dark');
+      // document.getElementById('nav-logo').classList.remove('color-invert');
       document.body.style.color = lightFontColor;
       document.body.style.backgroundColor = lightBgColor;
     } else {
-      document.querySelector('nav').classList.add('navbar-dark');
-      document.querySelector('input.form-control').classList.add('search-dark');
-      document.getElementById('nav-logo').classList.add('color-invert');
+      // document.querySelector('nav').classList.add('navbar-dark');
+      // document.querySelector('input.form-control').classList.add('search-dark');
+      // document.getElementById('nav-logo').classList.add('color-invert');
 
       // console.log(
       // Returns NodeList of elements with -dark class

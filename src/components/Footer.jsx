@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function Footer(props) {
   return (
-    <footer className='footer fixed-bottom mt-5'>
+    <footer className='footer mt-5'>
       <div className='container'>
         <div>
           <p>
@@ -12,10 +12,10 @@ export default function Footer(props) {
         <div className='ms-auto'>
           <p>
             <a
-              href='https://portfolio-page-vite-6r4.pages.dev/'
+              href='https://www.streamlinehq.com'
               className='pointer text-secondary'
             >
-              View Profile
+              Free Design Thinking SVG illustration by Streamline View Profile
             </a>
           </p>
         </div>
