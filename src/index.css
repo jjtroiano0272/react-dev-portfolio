@@ -117,11 +117,15 @@ input.search-dark:focus {
   background-image: url('./image/layered-waves-haikei_C.svg');
 }
 
+.test-bg-1 {
+  background-image: url('./image/blob-scene-haikei.svg');
+}
+
 .bg-color-primary {
-  background-color: #e8e8a6;
+  background-color: #f2f5c8;
 }
 .bg-color-secondary {
-  background-color: #f2f5c8;
+  background-color: #e8e8a6;
 }
 .bg-color-tertiary {
   background-color: #c1deae;
@@ -136,4 +140,34 @@ input.search-dark:focus {
 
 .section-title {
   font-size: 3rem;
+}
+
+.custom-shape-divider-bottom-1644085574 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1644085574 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1644085574 .shape-fill {
+  fill: #ffffff;
+}
+
+.cert-badge {
+  width: auto;
+  height: auto;
+  max-width: 10rem;
+  max-height: 10rem;
+  margin: 1rem 0.2rem;
+  padding: 0.9rem;
 }

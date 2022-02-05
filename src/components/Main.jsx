@@ -33,23 +33,31 @@ export default function Main(props) {
         <p className='text-secondary'>Redesign in progress</p>
       </div>
 
-      <div className='container bg-color-secondary text-center text-md-left vh-100'>
+      <div
+        className='container test-bg-1 text-center text-md-left vh-100'
+        id='section-intro'
+      >
         <Navbar />
+
         <h1>Hi! I'm &#123; WebDev &#125; Jonathan</h1>
         <p className='text-muted'>some buzzwords go here</p>
         <img
-          src={illustrationThinking}
-          alt='Quirky illustration of a gentleman thinking of engineering'
+          // src={illustrationThinking}
+          alt='Quirky illustration of an engineer thinking'
           className='min-vh-100 vw-100'
         />
       </div>
 
-      <div className='container bg-stacked-waves-C text-center'>
+      <div
+        className='container bg-animated-blob text-center py-5'
+        id='section-projects'
+      >
         <h2 className='section-title text-dark mb-6'>PROJECTS</h2>
         <img
           src={illustrationBusinessDeal}
           alt='Two people shake hands in a business deal, superimposed on a contract and dollar sign.'
         />
+        {/* Cards section */}
 
         <div className='row'>
           <div className='col-xs-12 col-md-4'>
@@ -135,21 +143,42 @@ export default function Main(props) {
             </Card>
           </div>
         </div>
+        {/* /Cards section */}
       </div>
 
-      <div className='section bg-color-secondary'>
-        <h2>Skills</h2>
+      <div
+        className='container text-center bg-color-secondary py-5'
+        id='section-skills'
+      >
+        <h2>SKILLS</h2>
         <img src={illustrationCoffeeTea} alt='' />
       </div>
-      <div className='section'>
-        <h2>Certifications</h2>
-        <ul>
-          <li>AWS</li>
-          <li>Oracle</li>
+
+      <div className='container text-center py-5' id='section-certifications'>
+        <h2>CERTIFICATIONS</h2>
+        <ul className='col-xs-12 py-5' style={{ listStyleType: 'none' }}>
+          <li>
+            <img
+              className='cert-badge'
+              src='https://images.credly.com/images/68468004-5a85-4f3b-bc58-590773979486/AWS-CloudPractitioner-2020.png'
+              alt='AWS Cloud Certified Professional'
+            />
+          </li>
+          <li>
+            <img
+              className='cert-badge'
+              src='https://education.oracle.com/file/general/Oracle-Certification-badge_OC-JuniorAssociate.png'
+              alt='Oracle Certified Junior Associate'
+            />
+          </li>
         </ul>
       </div>
-      <div className='section bg-color-tertiary'>
-        <h2>About</h2>
+
+      <div
+        className='container text-center bg-color-tertiary py-5'
+        id='section-about'
+      >
+        <h2>ABOUT</h2>
         <p className='text-muted'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
           itaque excepturi cumque distinctio quasi reiciendis ratione! Sapiente,
@@ -165,7 +194,11 @@ export default function Main(props) {
           distinctio eum!
         </p>
       </div>
-      <div className='section bg-color-quaternary' id='contact'>
+
+      <div
+        className='container text-center bg-color-quaternary py-5'
+        id='section-contact'
+      >
         <h2 className='text-light'>Contact</h2>
         <ContactForm />
       </div>
