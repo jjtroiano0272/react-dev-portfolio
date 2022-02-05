@@ -171,3 +171,46 @@ input.search-dark:focus {
 .custom-shape-divider-bottom-1644088460 .shape-fill {
   fill: #ffffff;
 }
+
+.custom-shape-divider-top-1644088736 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1644088736 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1644088736 .shape-fill {
+  fill: #ffffff;
+}
+
+.custom-shape-divider-bottom-1644089737 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1644089737 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 68px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1644089737 .shape-fill {
+  fill: #ffffff;
+}

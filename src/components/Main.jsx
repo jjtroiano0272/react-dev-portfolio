@@ -56,12 +56,13 @@ export default function Main(props) {
         <h1>Hi! I'm &#123; WebDev &#125; Jonathan</h1>
         <p className='text-muted'>some buzzwords go here</p>
         <img
-          // src={illustrationThinking}
+          src={illustrationThinking}
           alt='Quirky illustration of an engineer thinking'
           className='min-vh-100 vw-100'
         />
       </div>
 
+      {/* Projects sction */}
       <div
         className='container bg-animated-blob text-center py-5'
         id='section-projects'
@@ -160,16 +161,46 @@ export default function Main(props) {
         {/* /Cards section */}
       </div>
 
+      {/* Skills section */}
       <div
-        className='container text-center bg-color-secondary py-5'
+        className='container text-center bg-color-secondary py-5 position-relative'
         id='section-skills'
       >
-        <h2>SKILLS</h2>
+        <div className='custom-shape-divider-top-1644088736'>
+          <svg
+            data-name='Layer 1'
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 1200 120'
+            preserveAspectRatio='none'
+          >
+            <path
+              d='M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z'
+              className='shape-fill'
+            ></path>
+          </svg>
+        </div>
+        <div className='custom-shape-divider-bottom-1644089737'>
+          <svg
+            data-name='Layer 1'
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 1200 120'
+            preserveAspectRatio='none'
+          >
+            <path
+              d='M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z'
+              className='shape-fill'
+            ></path>
+          </svg>
+        </div>
+
+        <h2 className='section-title text-dark'>SKILLS</h2>
         <img src={illustrationCoffeeTea} alt='' />
       </div>
 
+      {/* Certifications section */}
+      {/* TODO: Card layout */}
       <div className='container text-center py-5' id='section-certifications'>
-        <h2>CERTIFICATIONS</h2>
+        <h2 className='section-title text-dark'>CERTIFICATIONS</h2>
         <ul className='col-xs-12 py-5' style={{ listStyleType: 'none' }}>
           <li>
             <img
@@ -188,11 +219,12 @@ export default function Main(props) {
         </ul>
       </div>
 
+      {/* About section */}
       <div
         className='container text-center bg-color-tertiary py-5'
         id='section-about'
       >
-        <h2>ABOUT</h2>
+        <h2 className='section-title'>ABOUT</h2>
         <p className='text-muted'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
           itaque excepturi cumque distinctio quasi reiciendis ratione! Sapiente,
@@ -209,11 +241,12 @@ export default function Main(props) {
         </p>
       </div>
 
+      {/* Contact section */}
       <div
         className='container text-center bg-color-quaternary py-5'
         id='section-contact'
       >
-        <h2 className='text-light'>Contact</h2>
+        <h2 className='section-title text-light'>Contact</h2>
         <ContactForm />
       </div>
     </>

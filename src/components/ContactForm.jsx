@@ -28,7 +28,12 @@ export const ContactForm = () => {
     useFormControls();
 
   return (
-    <form autoComplete='off' onSubmit={handleFormSubmit}>
+    <form
+      autoComplete='off'
+      onSubmit={handleFormSubmit}
+      action='https://formsubmit.co/jonathan.j.troiano@gmail.com'
+      method='POST'
+    >
       {inputFieldValues.map((inputFieldValue, index) => {
         return (
           <TextField
@@ -50,6 +55,7 @@ export const ContactForm = () => {
         );
       })}
       <Button
+        className='mt-5'
         variant='contained'
         type='submit'
         color='secondary'
