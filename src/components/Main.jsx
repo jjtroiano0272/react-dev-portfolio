@@ -12,9 +12,9 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import ShareIcon from '@mui/icons-material/Share';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { CardActionArea } from '@mui/material';
-import ShareIcon from '@mui/icons-material/Share';
 import * as loader from './common/rainbowSpinLoader';
 import { ContactForm } from './ContactForm';
 import Navbar from './Navbar-Bootstrap';
@@ -23,6 +23,9 @@ import illustrationBusinessDeal from '../image/streamline-icon-business-deal@250
 import illustrationCoffeeTea from '../image/streamline-icon-coffee-tea@250x250.svg';
 import triviaAppScreenshotLight from '../image/project images/trivia-app-light.png';
 import triviaAppScreenshotDark from '../image/project images/trivia-app-dark.png';
+import tenziesAppScreenshotLight from '../image/project images/tenzies-app-light.png';
+import notesAppScreenshotLight from '../image/project images/notes-app-light.png';
+import memeAppScreenshotLight from '../image/project images/ml-meme-generator-app-light.png';
 // User-generated component imports go here
 
 export default function Main(props) {
@@ -33,11 +36,12 @@ export default function Main(props) {
         <p className='text-secondary'>Redesign in progress</p>
       </div>
 
+      {/* Intro section */}
       <div
         className='container test-bg-1 text-center text-md-left vh-100 position-relative'
         id='section-intro'
       >
-        <div class='custom-shape-divider-bottom-1644088460'>
+        <div className='custom-shape-divider-bottom-1644088460'>
           <svg
             data-name='Layer 1'
             xmlns='http://www.w3.org/2000/svg'
@@ -72,93 +76,121 @@ export default function Main(props) {
           src={illustrationBusinessDeal}
           alt='Two people shake hands in a business deal, superimposed on a contract and dollar sign.'
         />
-        {/* Cards section */}
 
-        <div className='row'>
-          <div className='col-xs-12 col-md-4'>
-            {/* TODO: Offload into its own component. this code implementation is uggo! */}
-            <Card sx={{ maxWidth: 10000 }}>
-              <a
-                href='https://react-trivia-app-jjt.netlify.app'
-                className='text-reset text-decoration-none'
-              >
-                <CardActionArea>
-                  <CardMedia
-                    component='img'
-                    height='300'
-                    image={triviaAppScreenshotLight}
-                    alt='Trivia App Screenshot'
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant='h5' component='div'>
-                      RESTful API Trivia
-                    </Typography>
-                    <Typography variant='body2' color='text.secondary'>
-                      Test your trivia knowledge by pulling random questions
-                      from the OpenTrivia API!
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </a>
-              <CardActions>
-                <Button size='small' color='primary'>
-                  <ShareIcon />
-                </Button>
-                <Button size='small' color='primary'>
-                  <a
-                    href='https://github.com/jjtroiano0272/react-quiz-app'
-                    className='text-reset text-decoration-none'
-                  >
-                    <GitHubIcon />
-                  </a>
-                </Button>
-              </CardActions>
-            </Card>
+        {/* Make this a standalone component to cut down on code complexity */}
+        <div className='card-deck py-5'>
+          <div className='card'>
+            <a href='https://react-trivia-app-jjt.netlify.app'>
+              <img
+                className='card-img-top'
+                src={triviaAppScreenshotLight}
+                alt='Screenshot of a trivia app'
+              />
+            </a>
+            <div className='card-body'>
+              <h5 className='card-title'>
+                <strong>RESTful API Trivia</strong>
+              </h5>
+              <p className='card-text'>
+                Test your trivia knowledge by pulling random questions from the
+                OpenTrivia API!
+              </p>
+              <p className='card-text text-small text-muted'>
+                <ShareIcon />
+                <a
+                  href='https://github.com/jjtroiano0272/react-quiz-app'
+                  className='text-reset'
+                >
+                  <GitHubIcon />
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div className='card'>
+            <a href='https://react-tenzies-app.netlify.app/'>
+              <img
+                className='card-img-top'
+                src={tenziesAppScreenshotLight}
+                alt='Screenshot of a tenzies dice game app'
+              />
+            </a>
+            <div className='card-body'>
+              <h5 className='card-title'>
+                <strong>Tenzies Game App</strong>
+              </h5>
+              <p className='card-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae nulla sequi.
+              </p>
+              <p className='card-text text-small text-muted'>
+                <ShareIcon />
+                <a
+                  href='https://github.com/jjtroiano0272/react-tenzies'
+                  className='text-reset'
+                >
+                  <GitHubIcon />
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div className='card'>
+            <a href='https://react-notes-mde.netlify.app'>
+              <img
+                className='card-img-top'
+                src={notesAppScreenshotLight}
+                alt='Screenshot of a Notes Markdown app'
+              />
+            </a>
+            <div className='card-body'>
+              <h5 className='card-title'>
+                <strong>Notes MarkDown Editor</strong>
+              </h5>
+              <p className='card-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae nulla sequi.
+              </p>
+              <p className='card-text text-small text-muted'>
+                <ShareIcon />
+                <a
+                  href='https://github.com/jjtroiano0272/react-notes'
+                  className='text-reset'
+                >
+                  <GitHubIcon />
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div className='card'>
+            <a href='https://react-ml-meme-generator.netlify.app'>
+              <img
+                className='card-img-top'
+                src={memeAppScreenshotLight}
+                alt='Screenshot of a Meme-generator app'
+              />
+            </a>
+            <div className='card-body'>
+              <h5 className='card-title'>
+                <strong>Notes MarkDown Editor</strong>
+              </h5>
+              <p className='card-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae nulla sequi.
+              </p>
+              <p className='card-text text-small text-muted'>
+                <ShareIcon />
+                <a
+                  href='https://github.com/jjtroiano0272/react-notes'
+                  className='text-reset'
+                >
+                  <GitHubIcon />
+                </a>
+              </p>
+            </div>
           </div>
         </div>
-
-        <div className='row'>
-          <div className='col-xs-12 col-md-4'>
-            <Card sx={{ maxWidth: 10000 }}>
-              <a
-                href='https://react-trivia-app-jjt.netlify.app'
-                className='text-reset text-decoration-none'
-              >
-                <CardActionArea>
-                  <CardMedia
-                    component='img'
-                    height='300'
-                    image={triviaAppScreenshotLight}
-                    alt='Trivia App Screenshot'
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant='h5' component='div'>
-                      RESTful API Trivia
-                    </Typography>
-                    <Typography variant='body2' color='text.secondary'>
-                      Test your trivia knowledge by pulling random questions
-                      from the OpenTrivia API!
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </a>
-              <CardActions>
-                <Button size='small' color='primary'>
-                  <ShareIcon />
-                </Button>
-                <Button size='small' color='primary'>
-                  <a
-                    href='https://github.com/jjtroiano0272/react-quiz-app'
-                    className='text-reset text-decoration-none'
-                  >
-                    <GitHubIcon />
-                  </a>
-                </Button>
-              </CardActions>
-            </Card>
-          </div>
-        </div>
-        {/* /Cards section */}
       </div>
 
       {/* Skills section */}
@@ -192,9 +224,21 @@ export default function Main(props) {
             ></path>
           </svg>
         </div>
-
         <h2 className='section-title text-dark'>SKILLS</h2>
-        <img src={illustrationCoffeeTea} alt='' />
+        <img
+          src={illustrationCoffeeTea}
+          alt='Quirky illustration of pour-over coffee and a Chemex (TM)'
+        />
+        <h4>Programming Languages</h4>
+        <p>C++, CSS, HTML, Java, Javascript, M Power Query, Python, R, SQL</p>
+        <hr />
+        <h4>Web Development Technologies</h4>
+        <p>
+          APIs, Bootstrap, Node.js, Responsive Web Development, Three.js, React
+        </p>
+        <hr />
+        <h4>Material UI Design Data & Business Analytics</h4>
+        <p>Microsoft Power BI, TOAD Data Point</p>
       </div>
 
       {/* Certifications section */}
