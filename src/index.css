@@ -142,7 +142,16 @@ input.search-dark:focus {
   font-size: 3rem;
 }
 
-.custom-shape-divider-bottom-1644085574 {
+.cert-badge {
+  width: auto;
+  height: auto;
+  max-width: 10rem;
+  max-height: 10rem;
+  margin: 1rem 0.2rem;
+  padding: 0.9rem;
+}
+
+.custom-shape-divider-bottom-1644088460 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -152,22 +161,13 @@ input.search-dark:focus {
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1644085574 svg {
+.custom-shape-divider-bottom-1644088460 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 150px;
 }
 
-.custom-shape-divider-bottom-1644085574 .shape-fill {
+.custom-shape-divider-bottom-1644088460 .shape-fill {
   fill: #ffffff;
-}
-
-.cert-badge {
-  width: auto;
-  height: auto;
-  max-width: 10rem;
-  max-height: 10rem;
-  margin: 1rem 0.2rem;
-  padding: 0.9rem;
 }
