@@ -17,6 +17,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { CardActionArea } from '@mui/material';
 import * as loader from './common/rainbowSpinLoader';
 import { ContactForm } from './ContactForm';
+import ContactFormHTML from './ContactFormHTML';
 import Navbar from './Navbar-Bootstrap';
 import illustrationThinking from '../image/streamline-icon-design-thinking@250x250.svg';
 import illustrationBusinessDeal from '../image/streamline-icon-business-deal@250x250.svg';
@@ -291,7 +292,9 @@ export default function Main(props) {
         id='section-contact'
       >
         <h2 className='section-title text-light'>Contact</h2>
-        <ContactForm />
+        {/* Version 1 has the contact written with vanilla HTML */}
+        <ContactFormHTML />
+        {/* <ContactForm /> */}
       </div>
     </>
   );
