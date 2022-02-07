@@ -4,7 +4,7 @@ export default function ContactFormHTML() {
       className='needs-validation'
       action='3331d9ed3cc3ff1b9969a4df8824cd34'
       method='POST'
-      novalidate
+      noValidate
     >
       <div className='form-row'>
         <div className='col-md-4 mb-3'>

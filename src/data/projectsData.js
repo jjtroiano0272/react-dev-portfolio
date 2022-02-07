@@ -8,7 +8,8 @@ const projectsData = [
       'Test your trivia knowledge by pulling random questions from the OpenTrivia API!',
     url: 'https://react-trivia-app-jjt.netlify.app',
     git: 'https://github.com/jjtroiano0272/react-quiz-app',
-    imgSrc: '../image/project images/trivia-app-light.png',
+    imgSrc: 'trivia-app-light.png',
+    altText: 'Screenshot of a trivia app',
   },
   {
     id: 'tenziesApp',
@@ -17,7 +18,9 @@ const projectsData = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda minima sint nisi.',
     url: 'https://react-tenzies-app.netlify.app',
     git: 'https://github.com/jjtroiano0272/react-tenzies-app',
-    imgSrc: '../image/project images/tenzies-app-light.png',
+    imgSrc: 'tenzies-app-light.png',
+    altText:
+      'Tenzies: the dice game where you hold dice constant and roll until they all match.',
   },
   {
     id: 'notesApp',
@@ -26,7 +29,8 @@ const projectsData = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda minima sint nisi.',
     url: 'https://react-notes-mde.netlify.app',
     git: 'https://github.com/jjtroiano0272/react-notes-app',
-    imgSrc: '../image/project images/notes-app-light.png',
+    imgSrc: 'notes-app-light.png',
+    altText: 'A Note-Markdown app, similar to writing a Readme file on GitHub ',
   },
   {
     id: 'memeGeneratorApp',
@@ -35,7 +39,8 @@ const projectsData = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda minima sint nisi.',
     url: 'https://react-ml-meme-generator.netlify.app',
     git: 'https://github.com/jjtroiano0272/meme-geneator',
-    imgSrc: '../image/project images/ml-meme-generator-app-light.png',
+    imgSrc: 'ml-meme-generator-app-light.png',
+    altText: 'An app for creating your own memes.',
   },
   {
     id: 'travelExperiencesApp',
@@ -44,7 +49,7 @@ const projectsData = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda minima sint nisi.',
     url: 'https://react-travel-experiences.netlify.app',
     git: 'https://github.com/jjtroiano0272/travel-experiences-mockup',
-    imgSrc: '../image/project images/travel-experiences-app-light.png',
+    imgSrc: 'travel-experiences-app-light.png',
   },
   {
     id: 'studioMockupApp',
