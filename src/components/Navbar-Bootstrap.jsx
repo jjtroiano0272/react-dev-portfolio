@@ -100,7 +100,7 @@ export default function Navbar() {
               </a>
             </li>
             <li className='nav-item px-4'>
-              <a href='#contact' className='nav-link'>
+              <a href='#section-contact' className='nav-link'>
                 <EmailIcon />
               </a>
             </li>

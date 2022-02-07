@@ -50,7 +50,7 @@ export default function ContactFormHTML() {
           <textarea
             className='form-control'
             id='form4Example3'
-            rows='4'
+            rows='8'
             name='message'
             placeholder='Message'
             required
