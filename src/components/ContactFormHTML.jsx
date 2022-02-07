@@ -2,7 +2,7 @@ export default function ContactFormHTML() {
   return (
     <form
       className='needs-validation'
-      action='3331d9ed3cc3ff1b9969a4df8824cd34'
+      action='https://formsubmit.co/3331d9ed3cc3ff1b9969a4df8824cd34'
       method='POST'
       noValidate
     >
