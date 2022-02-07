@@ -29,7 +29,7 @@ QuickLinks:
 - [x] https://react-trivia-app-jjt.netlify.app
 - [x] https://react-tenzies-app.netlify.app
 - [x] https://react-notes-mde.netlify.app
-- [ ] https://react-ml-meme-generator.netlify.app
+- [x] https://react-ml-meme-generator.netlify.app
 - [ ] https://react-travel-experiences.netlify.app
 - [ ] https://shrouded-spire-70852.herokuapp.com/
 - [ ] https://studio-mockup.netlify.app
