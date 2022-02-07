@@ -13,6 +13,7 @@
 - [ ] MUI options menu needs to register a click on the element if it's ON THE SAME BLOCK, not JUST the text element.
 - [ ] Light/Dark mode consistency & styling
 - [ ] ContactForm: when data in any field using previous data as completion, it applies a bg-color to it. I want it to NOT have a color.
+- [ ] Mobile formatting is alright. Desktop formatting is completely busted.
 
 ## Sources/Thanks to
 
