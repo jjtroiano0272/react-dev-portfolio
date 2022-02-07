@@ -19,23 +19,18 @@ import * as loader from './common/rainbowSpinLoader';
 import { ContactForm } from './ContactForm';
 import ContactFormHTML from './ContactFormHTML';
 import Navbar from './Navbar-Bootstrap';
+import Ribbon from './common/Ribbon';
+import CardCollection from './CardCollection';
 import illustrationThinking from '../image/streamline-icon-design-thinking@250x250.svg';
 import illustrationBusinessDeal from '../image/streamline-icon-business-deal@250x250.svg';
 import illustrationCoffeeTea from '../image/streamline-icon-coffee-tea@250x250.svg';
-import triviaAppScreenshotLight from '../image/project images/trivia-app-light.png';
-import triviaAppScreenshotDark from '../image/project images/trivia-app-dark.png';
-import tenziesAppScreenshotLight from '../image/project images/tenzies-app-light.png';
-import notesAppScreenshotLight from '../image/project images/notes-app-light.png';
-import memeAppScreenshotLight from '../image/project images/ml-meme-generator-app-light.png';
 // User-generated component imports go here
 
 export default function Main(props) {
   return (
     <>
       {/* Redesign ribbon */}
-      <div className='container-fluid bg-warning text-center p-1'>
-        <p className='text-secondary'>Redesign in progress</p>
-      </div>
+      <Ribbon />
 
       {/* Intro section */}
       <div
@@ -78,120 +73,7 @@ export default function Main(props) {
           alt='Two people shake hands in a business deal, superimposed on a contract and dollar sign.'
         />
 
-        {/* Make this a standalone component to cut down on code complexity */}
-        <div className='card-deck py-5'>
-          <div className='card'>
-            <a href='https://react-trivia-app-jjt.netlify.app'>
-              <img
-                className='card-img-top'
-                src={triviaAppScreenshotLight}
-                alt='Screenshot of a trivia app'
-              />
-            </a>
-            <div className='card-body'>
-              <h5 className='card-title'>
-                <strong>RESTful API Trivia</strong>
-              </h5>
-              <p className='card-text'>
-                Test your trivia knowledge by pulling random questions from the
-                OpenTrivia API!
-              </p>
-              <p className='card-text text-small text-muted'>
-                <ShareIcon />
-                <a
-                  href='https://github.com/jjtroiano0272/react-quiz-app'
-                  className='text-reset'
-                >
-                  <GitHubIcon />
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <div className='card'>
-            <a href='https://react-tenzies-app.netlify.app/'>
-              <img
-                className='card-img-top'
-                src={tenziesAppScreenshotLight}
-                alt='Screenshot of a tenzies dice game app'
-              />
-            </a>
-            <div className='card-body'>
-              <h5 className='card-title'>
-                <strong>Tenzies Game App</strong>
-              </h5>
-              <p className='card-text'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae nulla sequi.
-              </p>
-              <p className='card-text text-small text-muted'>
-                <ShareIcon />
-                <a
-                  href='https://github.com/jjtroiano0272/react-tenzies'
-                  className='text-reset'
-                >
-                  <GitHubIcon />
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <div className='card'>
-            <a href='https://react-notes-mde.netlify.app'>
-              <img
-                className='card-img-top'
-                src={notesAppScreenshotLight}
-                alt='Screenshot of a Notes Markdown app'
-              />
-            </a>
-            <div className='card-body'>
-              <h5 className='card-title'>
-                <strong>Notes MarkDown Editor</strong>
-              </h5>
-              <p className='card-text'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae nulla sequi.
-              </p>
-              <p className='card-text text-small text-muted'>
-                <ShareIcon />
-                <a
-                  href='https://github.com/jjtroiano0272/react-notes'
-                  className='text-reset'
-                >
-                  <GitHubIcon />
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <div className='card'>
-            <a href='https://react-ml-meme-generator.netlify.app'>
-              <img
-                className='card-img-top'
-                src={memeAppScreenshotLight}
-                alt='Screenshot of a Meme-generator app'
-              />
-            </a>
-            <div className='card-body'>
-              <h5 className='card-title'>
-                <strong>Notes MarkDown Editor</strong>
-              </h5>
-              <p className='card-text'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae nulla sequi.
-              </p>
-              <p className='card-text text-small text-muted'>
-                <ShareIcon />
-                <a
-                  href='https://github.com/jjtroiano0272/react-notes'
-                  className='text-reset'
-                >
-                  <GitHubIcon />
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
+        <CardCollection />
       </div>
 
       {/* Skills section */}

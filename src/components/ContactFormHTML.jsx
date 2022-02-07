@@ -2,7 +2,7 @@ export default function ContactFormHTML() {
   return (
     <form
       className='needs-validation'
-      action='https://formsubmit.co/jonathan.j.troiano@gmail.com'
+      action='3331d9ed3cc3ff1b9969a4df8824cd34'
       method='POST'
       novalidate
     >
