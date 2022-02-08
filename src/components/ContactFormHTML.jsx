@@ -4,7 +4,7 @@ export default function ContactFormHTML() {
       className='container-fluid text-center bg-color-quaternary py-5'
       id='section-contact'
     >
-      <h2 className='section-title text-light'>Contact</h2>
+      <h2 className='text-header text-light mb-4'>Contact</h2>
       <form
         className='needs-validation justify-content-center'
         action='https://formsubmit.co/3331d9ed3cc3ff1b9969a4df8824cd34'

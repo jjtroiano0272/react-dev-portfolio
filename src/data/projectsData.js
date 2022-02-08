@@ -53,7 +53,7 @@ const projectsData = [
     id: 'studioMockupApp',
     title: 'Studio Mockup',
     description: `Site redesign mockup for a tattoo studio`,
-    url: '  ',
+    url: 'https://studio-mockup.netlify.app/',
     git: 'https://github.com/jjtroiano0272/mockup_tattoo-studio',
     imgSrc: 'studio-mockup-light.png',
     altText: 'Screenshot of a tattoo studio redesign mockup.',

@@ -14,7 +14,10 @@ export default function CardCollection() {
             >
               <div
                 className='card rounded border-secondary'
-                style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}
+                style={{
+                  marginTop: '1.5rem',
+                  marginBottom: '1.5rem',
+                }}
               >
                 <a href={project.url}>
                   <div className='img-gradient'>

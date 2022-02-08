@@ -4,7 +4,7 @@ export default function About(params) {
       className='container-fluid text-center bg-color-tertiary py-5 px-5'
       id='section-about'
     >
-      <h2 className='text-header'>ABOUT</h2>
+      <h2 className='text-header mb-4'>ABOUT</h2>
       <p className='text-muted'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
         itaque excepturi cumque distinctio quasi reiciendis ratione! Sapiente,
