@@ -14,6 +14,7 @@
 - [ ] Light/Dark mode consistency & styling
 - [ ] ContactForm: when data in any field using previous data as completion, it applies a bg-color to it. I want it to NOT have a color.
 - [ ] Mobile formatting is alright. Desktop formatting is completely busted.
+- [ ] Navbar: social links don't have resuable code!
 
 ## Sources/Thanks to
 

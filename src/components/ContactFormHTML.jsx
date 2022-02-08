@@ -6,7 +6,7 @@ export default function ContactFormHTML() {
       method='POST'
     >
       <div className='form-row'>
-        <div className='col-md-4 mb-3'>
+        <div className='col-md-4 mb-3 '>
           <div className='input-group'>
             <input
               type='text'

@@ -34,7 +34,7 @@ export default function Main(props) {
 
       {/* Intro section */}
       <div
-        className='container test-bg-1 text-center text-md-left vh-100 position-relative'
+        className='container-fluid test-bg-1 text-center text-md-left vh-100 position-relative'
         id='section-intro'
       >
         <div className='custom-shape-divider-bottom-1644088460'>
@@ -65,7 +65,7 @@ export default function Main(props) {
 
       {/* Projects sction */}
       <div
-        className='container bg-animated-blob text-center py-5'
+        className='container-fluid bg-animated-blob text-center py-5'
         id='section-projects'
       >
         <h2 className='section-title text-dark mb-6'>PROJECTS</h2>
@@ -79,7 +79,7 @@ export default function Main(props) {
 
       {/* Skills section */}
       <div
-        className='container text-center bg-color-secondary py-5 position-relative'
+        className='container-fluid text-center bg-color-secondary py-5 position-relative'
         id='section-skills'
       >
         <div className='custom-shape-divider-top-1644088736'>
@@ -127,7 +127,10 @@ export default function Main(props) {
 
       {/* Certifications section */}
       {/* TODO: Card layout */}
-      <div className='container text-center py-5' id='section-certifications'>
+      <div
+        className='container-fluid text-center py-5'
+        id='section-certifications'
+      >
         <h2 className='section-title text-dark'>CERTIFICATIONS</h2>
         <ul className='col-xs-12 py-5' style={{ listStyleType: 'none' }}>
           <li>
@@ -149,7 +152,7 @@ export default function Main(props) {
 
       {/* About section */}
       <div
-        className='container text-center bg-color-tertiary py-5'
+        className='container-fluid text-center bg-color-tertiary py-5'
         id='section-about'
       >
         <h2 className='section-title'>ABOUT</h2>
@@ -171,7 +174,7 @@ export default function Main(props) {
 
       {/* Contact section */}
       <div
-        className='container text-center bg-color-quaternary py-5'
+        className='container-fluid text-center bg-color-quaternary py-5'
         id='section-contact'
       >
         <h2 className='section-title text-light'>Contact</h2>
