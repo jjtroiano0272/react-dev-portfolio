@@ -82,33 +82,35 @@ export default function Navbar() {
     //   </FormGroup>
     // </Tooltip>
     // <div className='d-flex flex-column flex-md-row p-3 px-md-4 mb-3'>
-    <div className='container pt-4'>
-      <nav className='navbar navbar-expand-lg navbar-light navbar-fixed-top mb-5'>
-        <div className='collase navbar-collapse'></div>
-        <div className='collapse navbar-collapse'>
-          <ul className='navbar-nav mr-auto'>
-            <li className='nav-item px-4'>
-              <a href='https://github.com/jjtroiano0272' className='nav-link'>
-                <GitHubIcon style={{ fontSize: '2.8rem' }} />
-              </a>
-            </li>
-            <li className='nav-item px-4'>
-              <a
-                href='https://www.linkedin.com/in/jonathan-troiano/'
-                className='nav-link'
-              >
-                <LinkedInIcon style={{ fontSize: '2.8rem' }} />
-              </a>
-            </li>
-            <li className='nav-item px-4'>
-              <a href='#section-contact' className='nav-link'>
-                <EmailIcon style={{ fontSize: '2.8rem' }} />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    // <div className='container pt-4'>
+    <nav className='navbar navbar-expand-sm navbar-expand-xs navbar-light navbar-fixed-top mb-5'>
+      {/* <div className='collase navbar-collapse'></div> */}
+      {/* <div className='collapse navbar-collapse'> */}
+      <div className='container-fluid'>
+        <ul className='navbar-nav justify-content-center collapse show navbar-collapse'>
+          <li className='nav-item px-4'>
+            <a href='https://github.com/jjtroiano0272' className='nav-link'>
+              <GitHubIcon style={{ fontSize: '2.8em' }} />
+            </a>
+          </li>
+          <li className='nav-item px-4'>
+            <a
+              href='https://www.linkedin.com/in/jonathan-troiano/'
+              className='nav-link'
+            >
+              <LinkedInIcon style={{ fontSize: '2.8em' }} />
+            </a>
+          </li>
+          <li className='nav-item px-4'>
+            <a href='#section-contact' className='nav-link'>
+              <EmailIcon style={{ fontSize: '2.8em' }} />
+            </a>
+          </li>
+        </ul>
+      </div>
+      {/* </div> */}
+    </nav>
+    // </div>
     // </div>
   );
 }

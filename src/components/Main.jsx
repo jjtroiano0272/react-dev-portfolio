@@ -19,169 +19,28 @@ import * as loader from './common/rainbowSpinLoader';
 import { ContactForm } from './ContactForm';
 import ContactFormHTML from './ContactFormHTML';
 import Navbar from './Navbar-Bootstrap';
-import Ribbon from './common/Ribbon';
-import CardCollection from './CardCollection';
-import illustrationThinking from '../image/streamline-icon-design-thinking@250x250.svg';
-import illustrationBusinessDeal from '../image/streamline-icon-business-deal@250x250.svg';
-import illustrationCoffeeTea from '../image/streamline-icon-coffee-tea@250x250.svg';
+import RedesignRibbon from './common/Ribbon';
+import Intro from './Intro';
+import Projects from './Projects';
+import Skills from './Skills';
+import Certifications from './Certifications';
+
 // User-generated component imports go here
+import About from './About';
 
 export default function Main(props) {
   return (
     <>
-      {/* Redesign ribbon */}
-      <Ribbon />
+      <RedesignRibbon />
+      <Intro />
+      <Projects />
+      <Skills />
+      <Certifications />
+      <About />
 
-      {/* Intro section */}
-      <div
-        className='container-fluid test-bg-1 text-center text-md-left vh-100 position-relative'
-        id='section-intro'
-      >
-        <div className='custom-shape-divider-bottom-1644088460'>
-          <svg
-            data-name='Layer 1'
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='0 0 1200 120'
-            preserveAspectRatio='none'
-          >
-            <path
-              d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z'
-              className='shape-fill'
-            ></path>
-          </svg>
-        </div>
-
-        <Navbar />
-
-        <h1 className='section-title'>Hi! I'm &#123; WebDev &#125; Jonathan</h1>
-        <p className='text-muted'>Collaborative, determined.</p>
-        <img
-          src={illustrationThinking}
-          alt='Quirky illustration of an engineer thinking'
-          className='mt-5'
-          // className='min-vh-100 vw-100'
-        />
-      </div>
-
-      {/* Projects sction */}
-      <div
-        className='container-fluid bg-animated-blob text-center py-5'
-        id='section-projects'
-      >
-        <h2 className='section-title text-dark mb-6'>PROJECTS</h2>
-        <img
-          src={illustrationBusinessDeal}
-          alt='Two people shake hands in a business deal, superimposed on a contract and dollar sign.'
-        />
-
-        <CardCollection />
-      </div>
-
-      {/* Skills section */}
-      <div
-        className='container-fluid text-center bg-color-secondary py-5 position-relative'
-        id='section-skills'
-      >
-        <div className='custom-shape-divider-top-1644088736'>
-          <svg
-            data-name='Layer 1'
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='0 0 1200 120'
-            preserveAspectRatio='none'
-          >
-            <path
-              d='M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z'
-              className='shape-fill'
-            ></path>
-          </svg>
-        </div>
-        <div className='custom-shape-divider-bottom-1644089737'>
-          <svg
-            data-name='Layer 1'
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='0 0 1200 120'
-            preserveAspectRatio='none'
-          >
-            <path
-              d='M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z'
-              className='shape-fill'
-            ></path>
-          </svg>
-        </div>
-        <h2 className='section-title text-dark'>SKILLS</h2>
-        <img
-          src={illustrationCoffeeTea}
-          alt='Quirky illustration of pour-over coffee and a Chemex (TM)'
-        />
-        <h4>Programming Languages</h4>
-        <p>C++, CSS, HTML, Java, Javascript, M Power Query, Python, R, SQL</p>
-        <hr />
-        <h4>Web Development Technologies</h4>
-        <p>
-          APIs, Bootstrap, Node.js, Responsive Web Development, Three.js, React
-        </p>
-        <hr />
-        <h4>Material UI Design Data & Business Analytics</h4>
-        <p>Microsoft Power BI, TOAD Data Point</p>
-      </div>
-
-      {/* Certifications section */}
-      {/* TODO: Card layout */}
-      <div
-        className='container-fluid text-center py-5'
-        id='section-certifications'
-      >
-        <h2 className='section-title text-dark'>CERTIFICATIONS</h2>
-        <ul className='col-xs-12 py-5' style={{ listStyleType: 'none' }}>
-          <li>
-            <img
-              className='cert-badge'
-              src='https://images.credly.com/images/68468004-5a85-4f3b-bc58-590773979486/AWS-CloudPractitioner-2020.png'
-              alt='AWS Cloud Certified Professional'
-            />
-          </li>
-          <li>
-            <img
-              className='cert-badge'
-              src='https://education.oracle.com/file/general/Oracle-Certification-badge_OC-JuniorAssociate.png'
-              alt='Oracle Certified Junior Associate'
-            />
-          </li>
-        </ul>
-      </div>
-
-      {/* About section */}
-      <div
-        className='container-fluid text-center bg-color-tertiary py-5'
-        id='section-about'
-      >
-        <h2 className='section-title'>ABOUT</h2>
-        <p className='text-muted'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-          itaque excepturi cumque distinctio quasi reiciendis ratione! Sapiente,
-          in. Nobis, id. Libero aut, maiores dicta perspiciatis provident
-          perferendis quia illum similique? Illum quia nesciunt voluptatem ipsam
-          quos facilis, atque, at maxime quisquam expedita odit est
-          exercitationem incidunt assumenda odio laborum cupiditate
-          necessitatibus iure cumque minima eos corrupti, sapiente vel beatae?
-          Quidem vero dolores ut, error libero at magnam nam debitis cum
-          mollitia provident repellendus, quam autem sit eligendi tenetur? Totam
-          minima voluptatum nulla et deserunt eligendi sequi assumenda a eaque
-          enim, suscipit adipisci in similique autem. Mollitia numquam veniam
-          distinctio eum!
-        </p>
-      </div>
-
-      {/* Contact section */}
-      <div
-        className='container-fluid text-center bg-color-quaternary py-5'
-        id='section-contact'
-      >
-        <h2 className='section-title text-light'>Contact</h2>
-        {/* Version 1 has the contact written with vanilla HTML */}
-        <ContactFormHTML />
-        {/* <ContactForm /> */}
-      </div>
+      {/* Version 1 has the contact written with vanilla HTML */}
+      <ContactFormHTML />
+      {/* <ContactForm /> */}
     </>
   );
 }
