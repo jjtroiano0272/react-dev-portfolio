@@ -129,6 +129,9 @@ input.search-dark:focus {
 .test-bg-1 {
   background-image: url('./image/blob-scene-haikei.svg');
 }
+.bg-about {
+  background-image: url('../public/assets/images/blob-scene-haikei-aboutSection.svg');
+}
 
 .bg-color-primary {
   background-color: var(--primary);
@@ -153,7 +156,7 @@ input.search-dark:focus {
 }
 
 .text-header {
-  font-family: 'Merriweather', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.5rem;
   letter-spacing: 1.08rem;
   overflow: hidden;

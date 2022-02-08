@@ -1,7 +1,7 @@
 export default function About(params) {
   return (
     <div
-      className='container-fluid text-center bg-color-tertiary py-5 px-5'
+      className='container-fluid text-center bg-about py-5 px-5'
       id='section-about'
     >
       <h2 className='text-header mb-4'>ABOUT</h2>

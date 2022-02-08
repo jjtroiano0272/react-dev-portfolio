@@ -1,6 +1,7 @@
 import projectsData from '../data/projectsData';
 import ShareIcon from '@mui/icons-material/Share';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Chip from '@mui/material/Chip';
 
 export default function CardCollection() {
   return (
@@ -34,12 +35,14 @@ export default function CardCollection() {
                     <strong>{project.title}</strong>
                   </h5>
                   <p className='card-text'>{project.description}</p>
-                  <p className='card-text text-small text-muted mx-5'>
+                  {/* <p className='card-text text-small text-muted mx-5'> */}
+                  <div className='d-flex justify-content-around'>
                     <ShareIcon />
                     <a href={project.git} className='text-reset'>
                       <GitHubIcon />
                     </a>
-                  </p>
+                  </div>
+                  {/* </p> */}
                 </div>
               </div>
             </div>

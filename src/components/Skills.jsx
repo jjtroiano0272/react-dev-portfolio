@@ -32,7 +32,9 @@ export default function Skills() {
           ></path>
         </svg>
       </div>
-      <h2 className='text-header text-dark'>SKILLS</h2>
+      <h2 className='text-header text-dark' style={{ marginTop: '8.5rem' }}>
+        SKILLS
+      </h2>
       <img
         src={illustrationCoffeeTea}
         alt='Quirky illustration of pour-over coffee and a Chemex (TM)'
@@ -46,7 +48,9 @@ export default function Skills() {
       </p>
       <hr />
       <h4>Material UI Design Data & Business Analytics</h4>
-      <p>Microsoft Power BI, TOAD Data Point</p>
+      <p style={{ marginBottom: '8.5rem' }}>
+        Microsoft Power BI, TOAD Data Point
+      </p>
     </div>
   );
 }
