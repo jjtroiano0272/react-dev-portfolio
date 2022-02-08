@@ -63,32 +63,33 @@ export default function Navbar() {
     // <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     // <h5 class="my-0 mr-md-auto font-weight-normal">LOGO</h5>
 
-    <div className='d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3'>
-      {/* TODO: Offload and just call it darkMode switch? It condenses down to one line of code */}
-      {/* <Tooltip
-        title={
-          !darkMode ? 'Switch theme to dark mode' : 'Switch theme to light mode'
-        }
-      >
-        <FormGroup>
-          <FormControlLabel
-            className='mx-2'
-            control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-            label=''
-            // onClick={toggleDarkMode}
-            data-tip
-            data-for='lightDarkModeTip'
-            type='checkbox'
-          />
-        </FormGroup>
-      </Tooltip> */}
-
+    // TODO: Offload and just call it darkMode switch? It condenses down to one line of code
+    //  <Tooltip
+    //   title={
+    //     !darkMode ? 'Switch theme to dark mode' : 'Switch theme to light mode'
+    //   }
+    // >
+    //   <FormGroup>
+    //     <FormControlLabel
+    //       className='mx-2'
+    //       control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
+    //       label=''
+    //       // onClick={toggleDarkMode}
+    //       data-tip
+    //       data-for='lightDarkModeTip'
+    //       type='checkbox'
+    //     />
+    //   </FormGroup>
+    // </Tooltip>
+    // <div className='d-flex flex-column flex-md-row p-3 px-md-4 mb-3'>
+    <div className='container pt-4'>
       <nav className='navbar navbar-expand-lg navbar-light navbar-fixed-top mb-5'>
-        <div className='container'>
-          <ul className='flex-row navbar-nav mr-auto'>
+        <div className='collase navbar-collapse'></div>
+        <div className='collapse navbar-collapse'>
+          <ul className='navbar-nav mr-auto'>
             <li className='nav-item px-4'>
               <a href='https://github.com/jjtroiano0272' className='nav-link'>
-                <GitHubIcon />
+                <GitHubIcon style={{ fontSize: '2.8rem' }} />
               </a>
             </li>
             <li className='nav-item px-4'>
@@ -96,17 +97,18 @@ export default function Navbar() {
                 href='https://www.linkedin.com/in/jonathan-troiano/'
                 className='nav-link'
               >
-                <LinkedInIcon />
+                <LinkedInIcon style={{ fontSize: '2.8rem' }} />
               </a>
             </li>
             <li className='nav-item px-4'>
               <a href='#section-contact' className='nav-link'>
-                <EmailIcon />
+                <EmailIcon style={{ fontSize: '2.8rem' }} />
               </a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
+    // </div>
   );
 }
