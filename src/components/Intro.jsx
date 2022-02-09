@@ -1,13 +1,15 @@
 import Navbar from './Navbar-Bootstrap';
+import TypeAnimation from 'react-type-animation';
+import Fade from 'react-reveal/Fade';
 import illustrationThinking from '../image/streamline-icon-design-thinking@250x250.svg';
 
 export default function Intro() {
   return (
     <div
-      className='container-fluid test-bg-1 text-center text-md-left vh-100 position-relative'
+      className='container-fluid bg-intro text-center text-md-left'
       id='section-intro'
     >
-      <div className='custom-shape-divider-bottom-1644088460'>
+      {/* <div className='intro-bottom-divider'>
         <svg
           data-name='Layer 1'
           xmlns='http://www.w3.org/2000/svg'
@@ -19,18 +21,33 @@ export default function Intro() {
             className='shape-fill'
           ></path>
         </svg>
-      </div>
+      </div> */}
 
       <Navbar />
 
-      <h1 className='text-title mb-4'>Hi! I'm &#123; WebDev &#125; Jonathan</h1>
-      <p className='text-muted'>Collaborative, determined.</p>
-      <img
-        src={illustrationThinking}
-        alt='Quirky illustration of an engineer thinking'
-        className='mt-5'
-        // className='min-vh-100 vw-100'
-      />
+      <div className='row align-items-center'>
+        <div className='col-12 col-md-6' style={{ height: '20vh' }}>
+          <TypeAnimation
+            className='text-title mb-4'
+            cursor={true}
+            sequence={["Hi! I'm { WebDev } Jonathan.", 1000]}
+            wrapper='h1'
+            repeat={1}
+          ></TypeAnimation>
+          <Fade delay={2700}>
+            <p className='text-muted'>Collaborative, determined.</p>
+          </Fade>
+        </div>
+        <div className='col-12 col-md-6'>
+          <img
+            src={illustrationThinking}
+            alt='Quirky illustration of an engineer thinking'
+            className='mt-sm-5 my-5'
+            style={{ maxWidth: '80vw' }}
+            // className='min-vh-100 vw-100'
+          />
+        </div>
+      </div>
     </div>
   );
 }

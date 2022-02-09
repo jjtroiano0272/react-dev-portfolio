@@ -3,8 +3,8 @@
   --secondary: #e8e8a6;
   --tertiary: #c1deae;
   --quaternary: #219f94;
-  --grad-start: rgba(33, 159, 148, 0.3);
-  --grad-end: rgba(220, 66, 37, 0.5);
+  --grad-start: rgba(255, 255, 255, 1);
+  --grad-end: rgba(0, 0, 0, 0.4);
 }
 
 body {
@@ -126,11 +126,16 @@ input.search-dark:focus {
   background-image: url('./image/layered-waves-haikei_C.svg');
 }
 
-.test-bg-1 {
+.bg-intro {
   background-image: url('./image/blob-scene-haikei.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .bg-about {
   background-image: url('../public/assets/images/blob-scene-haikei-aboutSection.svg');
+}
+.bg-skills {
+  background-image: url('../public/assets/images/blob-scene-haikei-skillsSection2.svg');
 }
 
 .bg-color-primary {
@@ -172,7 +177,7 @@ input.search-dark:focus {
   padding: 0.9rem;
 }
 
-.custom-shape-divider-bottom-1644088460 {
+.intro-bottom-divider {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -182,14 +187,14 @@ input.search-dark:focus {
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1644088460 svg {
+.intro-bottom-divider svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 150px;
 }
 
-.custom-shape-divider-bottom-1644088460 .shape-fill {
+.intro-bottom-divider .shape-fill {
   fill: #ffffff;
 }
 
@@ -276,34 +281,34 @@ input.search-dark:focus {
   background: -moz-linear-gradient(
     top,
     rgba(0, 47, 75, 0.5) 0%,
-    var(--tertiary) 100%
+    var(--grad-end) 100%
   ); /* FF3.6+ */
   background: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    color-stop(0%, var(--tertiary)),
+    color-stop(0%, var(--grad-end)),
     color-stop(100%, rgba(0, 47, 75, 0.5))
   ); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(
     top,
     var(--grad-start) 0%,
-    var(--tertiary) 100%
+    var(--grad-end) 100%
   ); /* Chrome10+,Safari5.1+ */
   background: -o-linear-gradient(
     top,
     rgba(0, 47, 75, 0.5) 0%,
-    var(--tertiary) 100%
+    var(--grad-end) 100%
   ); /* Opera 11.10+ */
   background: -ms-linear-gradient(
     top,
     rgba(0, 47, 75, 0.5) 0%,
-    var(--tertiary) 100%
+    var(--grad-end) 100%
   ); /* IE10+ */
   background: linear-gradient(
     to bottom,
     var(--grad-start) 0%,
-    var(--tertiary) 100%
+    var(--grad-end) 100%
   ); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
@@ -316,4 +321,11 @@ input.search-dark:focus {
   width: 100%;
   height: 42rem;
   object-fit: cover;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.75);
 }

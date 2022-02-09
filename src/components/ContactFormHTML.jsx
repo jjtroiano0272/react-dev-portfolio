@@ -1,3 +1,5 @@
+import SendIcon from '@mui/icons-material/Send';
+
 export default function ContactFormHTML() {
   return (
     <div
@@ -66,8 +68,8 @@ export default function ContactFormHTML() {
             </div>
           </div>
         </div>
-        <button className='btn btn-primary' type='submit'>
-          Submit form
+        <button className='btn btn-primary rounded' type='submit'>
+          <SendIcon style={{ width: '4rem', margin: '.5em' }} />
         </button>
       </form>
     </div>

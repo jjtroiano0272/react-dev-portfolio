@@ -32,6 +32,7 @@ export default function Skills() {
           ></path>
         </svg>
       </div>
+
       <h2 className='text-header text-dark' style={{ marginTop: '8.5rem' }}>
         SKILLS
       </h2>
