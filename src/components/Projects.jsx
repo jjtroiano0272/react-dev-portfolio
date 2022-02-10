@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div
       className='container-fluid bg-animated-blob text-center py-5'
-      id='section-projects'
+      id='projects'
     >
       <h2 className='text-header text-dark mt-4 mb-5'>PROJECTS</h2>
       <img

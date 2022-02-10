@@ -4,7 +4,7 @@ export default function ContactFormHTML() {
   return (
     <div
       className='container-fluid text-center bg-color-quaternary py-5'
-      id='section-contact'
+      id='contact'
     >
       <h2 className='text-header text-light mb-4'>Contact</h2>
       <form

@@ -102,7 +102,7 @@ export default function Navbar() {
             </a>
           </li>
           <li className='nav-item px-4'>
-            <a href='#section-contact' className='nav-link'>
+            <a href='#contact' className='nav-link'>
               <EmailIcon style={{ fontSize: '2.8em' }} />
             </a>
           </li>

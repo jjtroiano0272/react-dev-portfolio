@@ -7,7 +7,7 @@ export default function Intro() {
   return (
     <div
       className='container-fluid bg-intro text-center text-md-left'
-      id='section-intro'
+      id='intro'
     >
       {/* <div className='intro-bottom-divider'>
         <svg

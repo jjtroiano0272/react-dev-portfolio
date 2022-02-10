@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <div
       className='container-fluid text-center bg-color-secondary py-5 position-relative'
-      id='section-skills'
+      id='skills'
     >
       <div className='custom-shape-divider-top-1644088736'>
         <svg
