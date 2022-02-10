@@ -31,7 +31,6 @@ import About from './About';
 export default function Main(props) {
   return (
     <>
-      <RedesignRibbon />
       <Intro />
       <Projects />
       <Skills />
