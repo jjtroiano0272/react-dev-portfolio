@@ -1,19 +1,21 @@
 import SendIcon from '@mui/icons-material/Send';
+import HeadShake from 'react-reveal/HeadShake';
 
 export default function ContactFormHTML() {
   return (
     <div
-      className='container-fluid text-center bg-color-quaternary py-5'
+      className='container-fluid text-center bg-color-quaternary py-5 px-md-6'
       id='contact'
     >
-      <h2 className='text-header text-light mb-4'>Contact</h2>
+      <h1 className='text-light mb-4'>Contact</h1>
       <form
         className='needs-validation justify-content-center'
         action='https://formsubmit.co/3331d9ed3cc3ff1b9969a4df8824cd34'
         method='POST'
+        id='formID'
       >
         <div className='form-row'>
-          <div className='col-md-4 mb-3'>
+          <div className='col-md-12 mb-3'>
             <div className='input-group'>
               <input
                 type='text'
@@ -32,7 +34,7 @@ export default function ContactFormHTML() {
         </div>
 
         <div className='form-row text-center'>
-          <div className='col-md-6 mb-3'>
+          <div className='col-md-12 mb-3'>
             <input
               type='text'
               className='form-control'
@@ -44,7 +46,7 @@ export default function ContactFormHTML() {
             <div className='invalid-tooltip'>Please provide a valid Name.</div>
           </div>
 
-          <div className='col-md-3 mb-3'>
+          <div className='col-md-12'>
             {/* <input
             type='text'
             className='form-control'
@@ -68,7 +70,11 @@ export default function ContactFormHTML() {
             </div>
           </div>
         </div>
-        <button className='btn btn-primary rounded' type='submit'>
+
+        <button
+          className='col-md-12 btn btn-primary rounded mt-5'
+          type='submit'
+        >
           <SendIcon style={{ width: '4rem', margin: '.5em' }} />
         </button>
       </form>

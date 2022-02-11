@@ -1,4 +1,5 @@
 import illustrationCoffeeTea from '../image/streamline-icon-coffee-tea@250x250.svg';
+import Fade from 'react-reveal/Fade';
 
 export default function Skills() {
   return (
@@ -33,9 +34,12 @@ export default function Skills() {
         </svg>
       </div>
 
-      <h2 className='text-header text-dark' style={{ marginTop: '8.5rem' }}>
-        SKILLS
-      </h2>
+      <Fade bottom>
+        <h1 className='text-dark' style={{ marginTop: '8.5rem' }}>
+          SKILLS
+        </h1>
+      </Fade>
+
       <img
         src={illustrationCoffeeTea}
         alt='Quirky illustration of pour-over coffee and a Chemex (TM)'

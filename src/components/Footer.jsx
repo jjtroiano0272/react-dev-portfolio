@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function Footer(props) {
   return (
-    <footer className='footer pt-5 pb-2 bg-secondary'>
+    <footer className='footer pt-5 pb-5 bg-secondary'>
       <div className='container' style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
         <div>
           <p>
@@ -11,12 +11,14 @@ export default function Footer(props) {
         </div>
         <div className='ms-auto'>
           <p>
-            <a
-              href='https://www.streamlinehq.com'
-              className='text-reset text-decoration-none'
-            >
-              Designs by Streamline
-            </a>
+            <small>
+              <a
+                href='https://www.streamlinehq.com'
+                className='text-reset text-decoration-none'
+              >
+                Designs by Streamline
+              </a>
+            </small>
           </p>
         </div>
       </div>

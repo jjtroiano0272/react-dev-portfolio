@@ -16,6 +16,45 @@
 - [ ] Mobile formatting is alright. Desktop formatting is completely busted.
 - [ ] Navbar: social links don't have resuable code!
 
+#### ALL
+
+- [ ] Typos
+- [ ] Typography standardization: the main title gets h1.title, all others just get h1 in css
+- [ ] MOBILE: 'To top' button that appears after scrolling down x far
+- [ ] DESKTOP: Image sizing
+- [o] fade in on scroll
+
+#### Intro
+
+- [ ] Fit background image to rectangle--manually cut it in InkScape
+- [ ] Nav links are slightly too big on mobile.
+
+#### Projects
+
+- [ ] images fill the container (there's one that doesn't and it looks weird)
+- [ ] 'Show more' functionality button after 3 projects'
+- [o] Gradient overlay
+
+#### Skills
+
+#### Certifications
+
+- [ ] card image padding
+- [ ] card margins
+- [o] Oracle 808 description
+
+#### About
+
+- [o] background repeats
+
+#### Contact
+
+- [ ] increase padding of fields to allow for animation shakes
+- [ ] DESKTOP: Size of button
+- [o] center input fields
+- [o] same width input fields
+- [ ] react-reveal shakes on incorrect input
+
 ## Sources/Thanks to
 
 - [ ]
