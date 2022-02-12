@@ -75,5 +75,15 @@ const projectsData = [
     altText: 'Screenshot of a simple counter app.',
   },
 ];
+// - [x] https://react-trivia-app-jjt.netlify.app
+// - [x] https://react-tenzies-app.netlify.app
+// - [x] https://react-notes-mde.netlify.app
+// - [x] https://react-ml-meme-generator.netlify.app
+// - [ ] https://react-travel-experiences.netlify.app
+// - [ ] https://shrouded-spire-70852.herokuapp.com/
+// - [ ] https://studio-mockup.netlify.app
+// - [ ] https://counter-app.pages.dev
+// - [ ] https://58c79bb9.tutorial-particlesystem.pages.dev
+// - [ ] https://tutorial-nebula.pages.dev
 
 export default projectsData;
