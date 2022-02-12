@@ -3,7 +3,7 @@
   --secondary: #e8e8a6;
   --tertiary: #c1deae;
   --quaternary: #219f94;
-  --grad-start: rgba(255, 255, 255, 1);
+  --grad-start: rgba(255, 255, 255, 0.7);
   --grad-end: rgba(0, 0, 0, 0);
 }
 
@@ -129,7 +129,7 @@ input.search-dark:focus {
 .bg-intro {
   background-image: url('./image/blob-scene-haikei.svg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100vh;
 }
 .bg-about {
   background-image: url('../public/assets/images/blob-scene-haikei-aboutSection.svg');
@@ -160,7 +160,7 @@ input.search-dark:focus {
 
 .text-title {
   font-family: 'Roboto Mono', monospace;
-  font-size: 3rem;
+  font-size: calc(1.375rem + 2vw);
 }
 
 h1 {
@@ -265,6 +265,14 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
+  .bg-intro-md {
+    background-image: url('./image/blob-scene-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .mw-md-50 {
+    max-width: 50% !important;
+  }
 }
 
 /* My custom Bootstrap classes */
@@ -291,6 +299,7 @@ h1 {
 .img-gradient {
   position: relative;
   display: inline-block;
+  filter: blur(0.89px);
 }
 .img-gradient:after {
   content: '';
@@ -328,8 +337,8 @@ h1 {
     var(--grad-end) 100%
   ); /* IE10+ */
   background: linear-gradient(
-    to bottom,
-    var(--grad-start) 0%,
+    to top,
+    var(--grad-start) 70%,
     var(--grad-end) 100%
   ); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */

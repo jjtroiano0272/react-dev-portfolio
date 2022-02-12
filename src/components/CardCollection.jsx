@@ -16,7 +16,7 @@ export default function CardCollection() {
             >
               <Fade left>
                 <div
-                  className='card rounded border-secondary'
+                  className='card rounded shadow'
                   style={{
                     marginTop: '1.5rem',
                     marginBottom: '1.5rem',
@@ -25,13 +25,23 @@ export default function CardCollection() {
                   <a href={project.url}>
                     <div className='img-gradient'>
                       <img
-                        className='card-img-top img-fluid w-100 img-gradient'
+                        className='card-img-top'
+                        style={{
+                          objectFit: 'cover',
+                          height: '50vh',
+                          width: '100vw',
+                        }}
                         src={`${process.env.PUBLIC_URL}/assets/images/${project.imgSrc}`}
                         alt={project.altText}
                       />
                     </div>
                   </a>
-                  <div className='card-body'>
+                  <div
+                    className='card-body d-flex flex-column'
+                    style={{
+                      boxShadow: '0px -4px 3px rgba(12,12,12,0.07)',
+                    }}
+                  >
                     <h5 className='card-title'>
                       <strong>{project.title}</strong>
                     </h5>

@@ -15,8 +15,8 @@ export default function Projects() {
       <img
         src={illustrationBusinessDeal}
         alt='Two people shake hands in a business deal, superimposed on a contract and dollar sign.'
-        style={{ height: '50vw' }}
-        className='mb-5'
+        // style={{ height: '50vw' }}
+        className='mb-5 mw-md-50'
       />
 
       <CardCollection />
