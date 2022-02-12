@@ -35,27 +35,34 @@ export default function Skills() {
       </div>
 
       <Fade bottom>
-        <h1 className='text-dark' style={{ marginTop: '8.5rem' }}>
+        <h1 className='text-dark mt-md-6' style={{ marginTop: '8.5rem' }}>
           SKILLS
         </h1>
       </Fade>
 
-      <img
-        src={illustrationCoffeeTea}
-        alt='Quirky illustration of pour-over coffee and a Chemex (TM)'
-      />
-      <h4>Programming Languages</h4>
-      <p>C++, CSS, HTML, Java, Javascript, M Power Query, Python, R, SQL</p>
-      <hr />
-      <h4>Web Development Technologies</h4>
-      <p>
-        APIs, Bootstrap, Node.js, Responsive Web Development, Three.js, React
-      </p>
-      <hr />
-      <h4>Material UI Design Data & Business Analytics</h4>
-      <p style={{ marginBottom: '8.5rem' }}>
-        Microsoft Power BI, TOAD Data Point
-      </p>
+      <div className='row'>
+        <div className='col-12 col-md-6 d-flex align-items-center min-vh-100'>
+          <img
+            src={illustrationCoffeeTea}
+            alt='Quirky illustration of pour-over coffee and a Chemex (TM)'
+          />
+        </div>
+        <div className='col-12 col-md-6 d-flex flex-column justify-content-center min-vh-100'>
+          <h4>Programming Languages</h4>
+          <p>C++, CSS, HTML, Java, Javascript, M Power Query, Python, R, SQL</p>
+          <hr />
+          <h4>Web Development Technologies</h4>
+          <p>
+            APIs, Bootstrap, Node.js, Responsive Web Development, Three.js,
+            React
+          </p>
+          <hr />
+          <h4>Material UI Design Data & Business Analytics</h4>
+          <p style={{ marginBottom: '8.5rem' }}>
+            Microsoft Power BI, TOAD Data Point
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
