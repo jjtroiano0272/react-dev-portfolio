@@ -40,14 +40,15 @@ export default function Skills() {
         </h1>
       </Fade>
 
-      <div className='row'>
-        <div className='col-12 col-md-6 d-flex align-items-center min-vh-100'>
+      <div className='row' style={{ marginBottom: '8.5rem' }}>
+        <div className='col-12 col-md-6 d-flex justify-content-center mw-100 my-4'>
           <img
             src={illustrationCoffeeTea}
             alt='Quirky illustration of pour-over coffee and a Chemex (TM)'
           />
         </div>
-        <div className='col-12 col-md-6 d-flex flex-column justify-content-center min-vh-100'>
+        {/* <div className='col-12 col-md-6 d-flex flex-column justify-content-center mw-100'> */}
+        <div className='col-12 col-md-6 d-flex flex-column my-auto mw-100'>
           <h4>Programming Languages</h4>
           <p>C++, CSS, HTML, Java, Javascript, M Power Query, Python, R, SQL</p>
           <hr />
@@ -58,9 +59,7 @@ export default function Skills() {
           </p>
           <hr />
           <h4>Material UI Design Data & Business Analytics</h4>
-          <p style={{ marginBottom: '8.5rem' }}>
-            Microsoft Power BI, TOAD Data Point
-          </p>
+          <p>Microsoft Power BI, TOAD Data Point</p>
         </div>
       </div>
     </div>

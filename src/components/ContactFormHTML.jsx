@@ -1,7 +1,14 @@
+import { useState } from 'react';
 import SendIcon from '@mui/icons-material/Send';
 import HeadShake from 'react-reveal/HeadShake';
 
 export default function ContactFormHTML() {
+  const [showErr, setShowErr] = useState(false);
+  const handleClick = () => {
+    console.log('hello');
+    setShowErr(!showErr);
+  };
+
   return (
     <div
       className='container-fluid text-center bg-color-quaternary py-5 px-md-6'
@@ -14,11 +21,11 @@ export default function ContactFormHTML() {
         method='POST'
         id='formID'
       >
-        <div className='form-row'>
-          <div className='col-md-12 mb-3'>
+        <div className='row form-row'>
+          <div className='col-12 col-sm-12 col-md-6 mb-3'>
             <div className='input-group'>
               <input
-                type='text'
+                type='email'
                 className='form-control'
                 id='validationTooltipEmail'
                 placeholder='Email'
@@ -31,10 +38,8 @@ export default function ContactFormHTML() {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className='form-row text-center'>
-          <div className='col-md-12 mb-3'>
+          <div className='col-12 col-sm-12 col-md-6 mb-3'>
             <input
               type='text'
               className='form-control'
@@ -45,17 +50,10 @@ export default function ContactFormHTML() {
             />
             <div className='invalid-tooltip'>Please provide a valid Name.</div>
           </div>
+        </div>
 
+        <div className='form-row text-center'>
           <div className='col-md-12'>
-            {/* <input
-            type='text'
-            className='form-control'
-            id='validationTooltip04'
-            rows='4'
-            placeholder='Message'
-            name='message'
-            required
-          /> */}
             <textarea
               className='form-control'
               id='form4Example3'
@@ -71,12 +69,14 @@ export default function ContactFormHTML() {
           </div>
         </div>
 
-        <button
-          className='col-md-12 btn btn-primary rounded mt-5'
-          type='submit'
-        >
-          <SendIcon style={{ width: '4rem', margin: '.5em' }} />
-        </button>
+        <HeadShake when={showErr}>
+          <button
+            className='col-md-12 btn btn-primary rounded mt-5'
+            type='submit'
+          >
+            <SendIcon style={{ width: '4rem', margin: '.5em' }} />
+          </button>
+        </HeadShake>
       </form>
     </div>
   );

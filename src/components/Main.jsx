@@ -24,11 +24,49 @@ import Intro from './Intro';
 import Projects from './Projects';
 import Skills from './Skills';
 import Certifications from './Certifications';
+import Fade from 'react-reveal/Fade';
 
 // User-generated component imports go here
 import About from './About';
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import styled from 'styled-components';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 export default function Main(props) {
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true);
+    } else if (scrolled <= 300) {
+      setVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  };
+
+  const StyledButton = styled.div`
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    bottom: 40px;
+    height: 20px;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    color: #fff;
+  `;
+
+  window.addEventListener('scroll', toggleVisible);
+
   return (
     <>
       <Intro />
@@ -40,6 +78,15 @@ export default function Main(props) {
       {/* Version 1 has the contact written with vanilla HTML */}
       <ContactFormHTML />
       {/* <ContactForm /> */}
+      <StyledButton>
+        <Fade bottom opposite when={visible}>
+          <ArrowCircleUpIcon
+            onClick={scrollToTop}
+            color='action'
+            style={{ display: visible ? 'inline' : 'none' }}
+          />
+        </Fade>
+      </StyledButton>
     </>
   );
 }

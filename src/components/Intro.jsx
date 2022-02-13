@@ -12,12 +12,12 @@ export default function Intro() {
       <Navbar />
 
       <div className='row align-items-center'>
-        <div className='col-12 col-md-6' style={{}}>
+        <div className='col-12 col-md-6' style={{ height: '20vh' }}>
           <TypeAnimation
             wrapper='h1'
             className='text-title mb-4'
             cursor={true}
-            sequence={["Hi! I'm { WebDev } Jonathan.", 1000]}
+            sequence={[`Hi! I'm { WebDev } Jonathan.`, 1000]}
             repeat={1}
           />
           <Fade delay={2700}>

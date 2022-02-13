@@ -46,4 +46,8 @@
 - [ ] DESKTOP: Size of button
 - [ ] react-reveal shakes on incorrect input
 
+## Notes
+
+- [ ] The sizing is broken for screen sizes bigger than 1440 (e.g. 4K) but I don't care about that. people are going to be viewing this on mobile or desktop.
+
 ## Sources/Thanks to

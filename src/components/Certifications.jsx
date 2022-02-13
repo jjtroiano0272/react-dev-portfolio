@@ -2,8 +2,6 @@ import Fade from 'react-reveal/Fade';
 
 export default function Certifications() {
   return (
-    // Certifications section
-    // TODO: Card layout
     <div
       className='container-fluid text-center py-5'
       id='section-certifications'
@@ -14,21 +12,21 @@ export default function Certifications() {
         </h1>
       </Fade>
 
-      <div className='card' style={{ width: '100%' }}>
+      <div className='card mb-5' style={{ width: '100%' }}>
         <Fade right>
           <div className='row no-gutters align-items-center'>
-            <div className='col-5 col-sm-5'>
+            <div className='col-12 col-sm-5'>
               <img
                 className='card-img p-5'
                 src='https://images.credly.com/images/68468004-5a85-4f3b-bc58-590773979486/AWS-CloudPractitioner-2020.png'
                 alt='AWS Cloud Certified Professional'
               />
             </div>
-            <div className='col-7 col-sm-7'>
+            <div className='col-12 col-sm-7'>
               <div className='card-body'>
-                <h5 className='card-title'>
+                <h3 className='card-title'>
                   Amazon Web Services Certified Cloud Practitioner
-                </h5>
+                </h3>
                 <hr />
                 <p className='card-text'>
                   This credential helps organizations identify and develop
@@ -40,21 +38,23 @@ export default function Certifications() {
             </div>
           </div>
         </Fade>
+      </div>
 
+      <div className='card' style={{ width: '100%' }}>
         <Fade right>
           <div className='row no-gutters align-items-center'>
-            <div className='col-5 col-sm-5'>
+            <div className='col-12 col-sm-5'>
               <img
                 className='card-img p-5'
                 src='https://education.oracle.com/file/general/Oracle-Certification-badge_OC-JuniorAssociate.png'
                 alt='Oracle Certified Junior Associate'
               />
             </div>
-            <div className='col-7 col-sm-7'>
+            <div className='col-12 col-sm-7'>
               <div className='card-body'>
-                <h5 className='card-title'>
+                <h3 className='card-title'>
                   Oracle Java SE 8 Programmer I (1Z0-808)
-                </h5>
+                </h3>
                 <hr />
                 <p className='card-text'>
                   Demonstrates: Java basics, working with data types, using
