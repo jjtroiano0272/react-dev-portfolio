@@ -1,6 +1,7 @@
 #### ALL
 
 - [x] fade in on scroll
+- [ ] Animated blob
 - [ ] DESKTOP: Image sizing
 - [ ] Typos
 - [ ] Typography standardization: the main title gets h1.title, all others just get h1 in css
@@ -19,7 +20,8 @@
 #### Projects
 
 - [x] Gradient overlay
-- [ ] Gradient from white to transparent
+- [x] Gradient from white to transparent
+- [ ] Gradient overlay is all ganked on some display/browser (Safari confirmed)
 - [ ] images fill the container (there's one that doesn't and it looks weird)
 - [ ] 'Show more' functionality button after 3 projects'
 
@@ -51,3 +53,11 @@
 - [ ] The sizing is broken for screen sizes bigger than 1440 (e.g. 4K) but I don't care about that. people are going to be viewing this on mobile or desktop.
 
 ## Sources/Thanks to
+
+# Design Palette
+
+- Body Font: https://fonts.google.com/specimen/Source+Code+Pro?category=Sans+Serif,Display,Monospace&thickness=
+  https://fonts.google.com/specimen/Raleway?category=Sans+Serif,Display,Monospace&thickness=2
+- Header: https://fonts.google.com/specimen/Montserrat+Alternates?query=montserrat
+  https://fonts.google.com/specimen/Montserrat?query=montserrat
+  https://fonts.google.com/specimen/Josefin+Sans

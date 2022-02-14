@@ -6,7 +6,7 @@ import illustrationThinking from '../image/streamline-icon-design-thinking@250x2
 export default function Intro() {
   return (
     <div
-      className='container-fluid bg-intro bg-intro-md text-center text-md-left vh-100'
+      className='container-fluid bg-intro bg-intro-md text-center vh-100'
       id='intro'
     >
       <Navbar />
@@ -28,7 +28,7 @@ export default function Intro() {
           <img
             src={illustrationThinking}
             alt='Quirky illustration of an engineer thinking'
-            className='mt-sm-5 my-5 max-vw-100'
+            className='mt-sm-5 my-5 mw-100'
             // style={{ maxWidth: '80vw' }}
             // className='min-vh-100 vw-100'
           />
