@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 export default function Skills() {
   return (
     <div
-      className='container-fluid text-center bg-color-secondary py-5 position-relative'
+      className='container-fluid text-center bg-color-2 py-5 position-relative'
       id='skills'
     >
       <div className='custom-shape-divider-top-1644088736'>
@@ -35,7 +35,10 @@ export default function Skills() {
       </div>
 
       <Fade bottom>
-        <h1 className='text-dark mt-md-6' style={{ marginTop: '8.5rem' }}>
+        <h1
+          className='text-uppercase text-dark mt-md-6 mb-lg-5'
+          style={{ marginTop: '8.5rem' }}
+        >
           SKILLS
         </h1>
       </Fade>
@@ -45,6 +48,7 @@ export default function Skills() {
           <img
             src={illustrationCoffeeTea}
             alt='Quirky illustration of pour-over coffee and a Chemex (TM)'
+            className='min-vh-100'
           />
         </div>
         {/* <div className='col-12 col-md-6 d-flex flex-column justify-content-center mw-100'> */}

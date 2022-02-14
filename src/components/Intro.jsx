@@ -9,26 +9,27 @@ export default function Intro() {
       className='container-fluid bg-intro bg-intro-md text-center vh-100'
       id='intro'
     >
-      <Navbar />
+      <Navbar className='testing' />
 
       <div className='row align-items-center'>
         <div className='col-12 col-md-6' style={{ height: '20vh' }}>
           <TypeAnimation
             wrapper='h1'
-            className='text-title mb-4'
+            className='text-landing-title mb-4'
             cursor={true}
             sequence={[`Hi! I'm { WebDev } Jonathan.`, 1000]}
             repeat={1}
           />
           <Fade delay={2700}>
-            <p className='text-muted p-4'>Collaborative, determined.</p>
+            <p className='text-muted p-0 p-md-4'>Collaborative, determined.</p>
           </Fade>
         </div>
         <div className='col-12 col-md-6'>
           <img
             src={illustrationThinking}
             alt='Quirky illustration of an engineer thinking'
-            className='mt-sm-5 my-5 mw-100'
+            className='mt-sm-5 my-5 custom1'
+            style={{ maxWidth: '75vh' }}
             // style={{ maxWidth: '80vw' }}
             // className='min-vh-100 vw-100'
           />

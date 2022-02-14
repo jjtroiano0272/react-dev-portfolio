@@ -7,8 +7,11 @@ export default function Certifications() {
       id='section-certifications'
     >
       <Fade bottom>
-        <h1 className='text-dark mb-5' style={{ letterSpacing: '5px' }}>
-          CERTIFICATIONS
+        <h1
+          className='text-uppercase text-dark mb-5'
+          style={{ fontSize: 'calc(2.3rem + 1.5vw)' }}
+        >
+          Certifications
         </h1>
       </Fade>
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Raleway:wght@200&family=Source+Code+Pro:wght@200&display=swap');
+
 :root {
   --primary: #f2f5c8;
   --secondary: #e8e8a6;
@@ -14,6 +16,21 @@ body {
     'Droid Sans', 'Helvetica Neue';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(2.875rem + 1.5vw);
+  /* font-size: 2.5rem; */
+  /* font-size: calc(1.375rem + 1.5vw);
+  letter-spacing: 1.08rem;*/
+  overflow-wrap: normal;
+  /* text-transform: uppercase; */
+}
+
+.text-landing-title {
+  font-family: 'Roboto Mono', monospace;
+  font-size: calc(2rem + 2vw);
 }
 
 code {
@@ -33,17 +50,12 @@ code {
   color: var(--primary-color);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 /* Shadow, bottom, light-mode, 1st strength */
-.sbl-1 {
+.shadow-bl-1 {
   box-shadow: 0px 5px 15px 1px #333;
 }
 
-.sbd-1 {
+.shadow-bd-1 {
   box-shadow: 0px 5px 15px 1px #fff;
 }
 
@@ -141,35 +153,21 @@ input.search-dark:focus {
   background-image: url('../public/assets/images/blob-scene-haikei-skillsSection2.svg');
 }
 
-.bg-color-primary {
+.bg-color-1 {
   background-color: var(--primary);
 }
-.bg-color-secondary {
+.bg-color-2 {
   background-color: var(--secondary);
 }
-.bg-color-tertiary {
+.bg-color-3 {
   background-color: var(--tertiary);
 }
-.bg-color-quaternary {
+.bg-color-4 {
   background-color: var(--quaternary);
 }
 
 .mb-6 {
   margin-bottom: 4em;
-}
-
-.text-title {
-  font-family: 'Roboto Mono', monospace;
-  font-size: calc(1.375rem + 2vw);
-}
-
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  /* font-size: 2.5rem; */
-  font-size: calc(1.375rem + 1.5vw);
-  letter-spacing: 1.08rem;
-  overflow: hidden;
-  text-transform: uppercase;
 }
 
 .cert-badge {
@@ -301,6 +299,10 @@ h1 {
   display: inline-block;
   filter: blur(0.89px);
 }
+.img-gradient:hover {
+  position: relative;
+  display: inline-block;
+}
 .img-gradient:after {
   content: '';
   position: absolute;
@@ -370,4 +372,21 @@ input::-webkit-input-placeholder,
 input {
   color: #ff8800;
   /* background-color: #fff; */
+}
+
+@media (max-width: 768px) {
+  .custom1 {
+    width: 60%;
+  }
+}
+
+/* query for laptop screens */
+.testing {
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: calc(0.5rem + 0.2vw);
+  }
 }

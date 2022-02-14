@@ -7,7 +7,7 @@ export default function About(params) {
       id='about'
     >
       <Fade top>
-        <h1 className='mb-4'>ABOUT</h1>
+        <h1 className='text-uppercase mb-4'>ABOUT</h1>
       </Fade>
       <p className='text-muted'>
         After receiving my B.A. in 2015, I found few satisfactory work

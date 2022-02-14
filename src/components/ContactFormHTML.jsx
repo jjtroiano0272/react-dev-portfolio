@@ -11,10 +11,10 @@ export default function ContactFormHTML() {
 
   return (
     <div
-      className='container-fluid text-center bg-color-quaternary py-5 px-md-6'
+      className='container-fluid text-center bg-color-4 py-5 px-md-6'
       id='contact'
     >
-      <h1 className='text-light mb-4'>Contact</h1>
+      <h1 className='text-uppercase text-light mb-4'>Contact</h1>
       <form
         className='needs-validation justify-content-center'
         action='https://formsubmit.co/3331d9ed3cc3ff1b9969a4df8824cd34'

@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <div className='container-fluid text-center py-5' id='projects'>
       <Fade top>
-        <h1 className='text-dark mt-4 mb-5'>PROJECTS</h1>
+        <h1 className='text-dark text-uppercase mt-4 mb-5'>Projects</h1>
       </Fade>
 
       <img
