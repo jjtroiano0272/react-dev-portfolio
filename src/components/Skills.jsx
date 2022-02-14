@@ -48,11 +48,11 @@ export default function Skills() {
           <img
             src={illustrationCoffeeTea}
             alt='Quirky illustration of pour-over coffee and a Chemex (TM)'
-            className='min-vh-100'
+            className='image-scale'
           />
         </div>
         {/* <div className='col-12 col-md-6 d-flex flex-column justify-content-center mw-100'> */}
-        <div className='col-12 col-md-6 d-flex flex-column my-auto mw-100'>
+        <div className='col-12 col-md-6 d-flex flex-column my-auto mw-100 my-text-scale'>
           <h4>Programming Languages</h4>
           <p>C++, CSS, HTML, Java, Javascript, M Power Query, Python, R, SQL</p>
           <hr />

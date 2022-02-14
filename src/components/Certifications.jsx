@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 export default function Certifications() {
   return (
     <div
-      className='container-fluid text-center py-5'
+      className='container-fluid text-center py-5 px-lg-6'
       id='section-certifications'
     >
       <Fade bottom>

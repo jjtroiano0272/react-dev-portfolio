@@ -380,13 +380,24 @@ input {
   }
 }
 
-/* query for laptop screens */
-.testing {
-  left: 0;
-}
-
 @media (min-width: 768px) {
   .nav-link {
+    font-size: calc(0.5rem + 0.2vw);
+  }
+}
+@media (min-width: 992px) {
+  .px-lg-6 {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+  }
+
+  .image-scale {
+    width: 75vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  .my-text-scale {
     font-size: calc(0.5rem + 0.2vw);
   }
 }
