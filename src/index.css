@@ -349,6 +349,9 @@ input.search-dark:focus {
   display: block;
 }
 
+.card-title {
+  font-weight: bold;
+}
 .card-img-top {
   max-width: 100%;
   width: 100%;
@@ -357,21 +360,39 @@ input.search-dark:focus {
 }
 
 .form-control {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.form-control:focus {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
 }
 
-.card-title {
-  font-weight: bold;
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.22);
+  color: #fff;
 }
+
 input::-moz-placeholder,
 input::-ms-input-placeholder,
 input::-webkit-input-placeholder,
 input {
-  color: #ff8800;
   /* background-color: #fff; */
+}
+
+input,
+textarea {
+  border-color: #1212122d !important;
+}
+
+::placeholder {
+  color: #ffffff !important;
+}
+
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+/* Microsoft Edge */
+::-ms-input-placeholder {
+  color: #ffffff !important;
 }
 
 @media (max-width: 768px) {

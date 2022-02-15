@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 
 export default function Footer(props) {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto',
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  };
+
   return (
     <footer className='footer bg-secondary py-5 px-md-6 px-xxl-5'>
       <div className='text-center'>
@@ -8,6 +17,7 @@ export default function Footer(props) {
           type='button'
           class='btn btn-outline-light btn-rounded'
           data-mdb-ripple-color='dark'
+          onClick={scrollToTop}
         >
           Back to top
         </button>
