@@ -30,7 +30,6 @@ import Fade from 'react-reveal/Fade';
 import About from './About';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import styled from 'styled-components';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 export default function Main(props) {
   const [visible, setVisible] = useState(false);
@@ -78,15 +77,6 @@ export default function Main(props) {
       {/* Version 1 has the contact written with vanilla HTML */}
       <ContactFormHTML />
       {/* <ContactForm /> */}
-      <StyledButton>
-        <Fade bottom opposite when={visible}>
-          <ArrowCircleUpIcon
-            onClick={scrollToTop}
-            color='action'
-            style={{ display: visible ? 'inline' : 'none' }}
-          />
-        </Fade>
-      </StyledButton>
     </>
   );
 }

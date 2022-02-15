@@ -1,9 +1,10 @@
 #### ALL
 
 - [x] fade in on scroll
+- [ ] Back top top BUTTON at bottom
 - [ ] Animated blob
 - [ ] DESKTOP: Image sizing
-- [ ] Typos
+- [x] Typos
 - [ ] Typography standardization: the main title gets h1.title, all others just get h1 in css
 - [ ] MOBILE: 'To top' button that appears after scrolling down x far
 - [ ] MUI options menu needs to register a click on the element if it's ON THE SAME BLOCK, not JUST the text element.
