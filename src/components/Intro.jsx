@@ -12,12 +12,12 @@ export default function Intro() {
       <Navbar className='testing' />
 
       <div className='row align-items-center'>
-        <div className='col-12 col-md-6' style={{ height: '20vh' }}>
+        <div className='col-12 col-md-6 mt-5 mb-4' style={{ height: '20vh' }}>
           <TypeAnimation
             wrapper='h1'
-            className='text-landing-title mb-4'
+            className='text-landing-title mb-4 px-5'
             cursor={true}
-            sequence={[`Hi! I'm { WebDev } Jonathan.`, 1000]}
+            sequence={[`Hi! I'm {WebDev} Jonathan.`, 1000]}
             repeat={1}
           />
           <Fade delay={2700}>
@@ -28,9 +28,8 @@ export default function Intro() {
           <img
             src={illustrationThinking}
             alt='Quirky illustration of an engineer thinking'
-            className='mt-sm-5 my-5 custom1'
-            style={{ maxWidth: '75vh' }}
-            // style={{ maxWidth: '80vw' }}
+            className='mt-sm-5 my-5 svg-illustration svg-illustration-md'
+            // style={{ maxWidth: '75vh' }}
             // className='min-vh-100 vw-100'
           />
         </div>

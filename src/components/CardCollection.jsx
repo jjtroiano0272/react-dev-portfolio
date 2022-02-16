@@ -1,4 +1,5 @@
 import projectsData from '../data/projectsData';
+import { MDBBadge } from 'mdb-react-ui-kit';
 import ShareIcon from '@mui/icons-material/Share';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Chip from '@mui/material/Chip';
@@ -23,7 +24,38 @@ export default function CardCollection() {
                   }}
                 >
                   <a href={project.url}>
-                    <div className='img-gradient'>
+                    <div
+                      className='img-gradient'
+                      style={{ position: 'relative' }}
+                    >
+                      {project.draft === true && (
+                        <>
+                          <MDBBadge
+                            className='mx-2'
+                            color='warning'
+                            style={{
+                              position: 'absolute',
+                              top: '10px',
+                              right: '10px',
+                              color: '#000',
+                            }}
+                          >
+                            DRAFT (in progress)
+                          </MDBBadge>
+
+                          {/* <span
+                            class='badge rounded-pill bg-secondary'
+                            style={{
+                              position: 'absolute',
+                              top: '10px',
+                              right: '10px',
+                            }}
+                          >
+                            DRAFT (in progress)
+                          </span> */}
+                        </>
+                      )}
+
                       <img
                         className='card-img-top'
                         style={{

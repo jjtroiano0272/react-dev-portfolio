@@ -17,6 +17,9 @@
 - [ ] Fit background image to rectangle--manually cut it in InkScape
 - [ ] Nav links are slightly too big on mobile.
 - [ ] Give { WebDev } its own line to ensure consisency
+- [ ] Change the man illustration
+- [ ] Intro image sizing for mobile
+- [ ] Break a line for { WebDev }
 
 #### Projects
 

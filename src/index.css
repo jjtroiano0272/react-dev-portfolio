@@ -298,7 +298,7 @@ input.search-dark:focus {
 .img-gradient {
   position: relative;
   display: inline-block;
-  filter: blur(0.89px);
+  /* filter: blur(0.89px); */
 }
 .img-gradient:hover {
   position: relative;
@@ -396,15 +396,24 @@ textarea {
   color: #ffffff !important;
 }
 
-@media (max-width: 768px) {
-  .custom1 {
-    width: 60%;
+@media (max-width: 575px) {
+  .svg-illustration {
+    width: 100%;
+    margin-bottom: 0px !important;
   }
+}
+@media (max-width: 768px) {
+  /* .svg-illustration-md {
+    width: 60%;
+  } */
 }
 
 @media (min-width: 768px) {
   .nav-link {
     font-size: calc(0.5rem + 0.2vw);
+  }
+  .svg-illustration-md {
+    width: 60%;
   }
 }
 @media (min-width: 992px) {

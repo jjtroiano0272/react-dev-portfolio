@@ -2,6 +2,17 @@ import { nanoid } from 'nanoid';
 
 const projectsData = [
   {
+    id: 'wordleClone',
+    title: 'Wordle-variant',
+    description: `A variant on Wordle. In development. What it will fully be is yet undetermined. I'm anticipating making a multilingual wordle.`,
+    language: 'React',
+    url: 'https://gwordle-jjt.netlify.app/',
+    git: 'https://github.com/jjtroiano0272/react-wordle-clone',
+    imgSrc: 'gwordle-light.png',
+    altText: 'Screenshot of a Wordle Clone.',
+    draft: true,
+  },
+  {
     id: 'triviaApp',
     title: 'RESTful API Trivia',
     description:
