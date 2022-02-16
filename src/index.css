@@ -7,6 +7,7 @@
   --quaternary: #219f94;
   --grad-start: rgba(255, 255, 255, 0.7);
   --grad-end: rgba(0, 0, 0, 0);
+  background-color: #219f94;
 }
 
 body {
