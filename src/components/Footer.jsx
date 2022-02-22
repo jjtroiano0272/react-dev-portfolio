@@ -11,11 +11,11 @@ export default function Footer(props) {
   };
 
   return (
-    <footer className='footer bg-secondary py-5 px-md-6 px-xxl-5'>
+    <footer className='footer bg-secondary pt-4 pb-5 p-3 px-md-6 px-xxl-5'>
       <div className='text-center'>
         <button
           type='button'
-          class='btn btn-outline-light btn-rounded'
+          className='btn btn-outline-light btn-rounded mb-3'
           data-mdb-ripple-color='dark'
           onClick={scrollToTop}
         >
