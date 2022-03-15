@@ -15,8 +15,8 @@ export default function Certifications() {
         </h1>
       </Fade>
 
-      <div className='card mb-5' style={{ width: '100%' }}>
-        <Fade right>
+      <Fade right>
+        <div className='card mb-5' style={{ width: '100%' }}>
           <div className='row no-gutters align-items-center'>
             <div className='col-12 col-sm-5'>
               <img
@@ -40,11 +40,11 @@ export default function Certifications() {
               </div>
             </div>
           </div>
-        </Fade>
-      </div>
+        </div>
+      </Fade>
 
-      <div className='card' style={{ width: '100%' }}>
-        <Fade right>
+      <Fade right>
+        <div className='card' style={{ width: '100%' }}>
           <div className='row no-gutters align-items-center'>
             <div className='col-12 col-sm-5'>
               <img
@@ -68,8 +68,8 @@ export default function Certifications() {
               </div>
             </div>
           </div>
-        </Fade>
-      </div>
+        </div>
+      </Fade>
     </div>
   );
 }

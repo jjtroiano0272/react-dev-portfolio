@@ -276,6 +276,9 @@ input.search-dark:focus {
   .mw-md-50 {
     max-width: 50% !important;
   }
+  .mw-md-35 {
+    max-width: 35% !important;
+  }
 }
 
 /* My custom Bootstrap classes */

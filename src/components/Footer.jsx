@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 export default function Footer(props) {
   const scrollToTop = () => {
@@ -33,7 +34,10 @@ export default function Footer(props) {
               href='https://www.streamlinehq.com'
               className='text-reset text-decoration-none'
             >
-              Designs by Streamline
+              Illustrations by Streamline{' '}
+              <sup>
+                <OpenInNewIcon style={{ fontSize: '75%' }} />
+              </sup>
             </a>
           </p>
         </div>

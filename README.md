@@ -14,6 +14,8 @@
 
 #### Intro
 
+- [ ] Image is too small on larger displays, and image overflows on smaller medium screens
+- [ ] Change image
 - [ ] Fit background image to rectangle--manually cut it in InkScape
 - [ ] Nav links are slightly too big on mobile.
 - [ ] Give { WebDev } its own line to ensure consisency
@@ -25,6 +27,7 @@
 
 - [x] Gradient overlay
 - [x] Gradient from white to transparent
+- [ ] Image is too big!
 - [ ] Gradient overlay is all ganked on some display/browser (Safari confirmed)
 - [ ] images fill the container (there's one that doesn't and it looks weird)
 - [ ] 'Show more' functionality button after 3 projects'

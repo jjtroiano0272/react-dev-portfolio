@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+import { Card, Stack, Button } from '@mui/material';
 import { nanoid } from 'nanoid';
 
 export default function Card({
@@ -15,25 +14,6 @@ export default function Card({
     numQuestions: 0,
   });
   const [selected, setSelected] = useState(false);
-
-  function selectChoice(choice) {
-    console.log('Choice selected! Now switching to next card in deck...');
-    console.log('Selected: ', choice);
-    // Set userSelections in state to this choice for the question
-    setSelected(true);
-
-    // Progress to next slide
-    // console.log(carouselRef);
-    // carouselRef.next();
-  }
-
-  function randomizeChoices(items) {
-    return items.sort(item =>
-      item.type === 'multiple' ? Math.random - 0.5 : item
-    );
-    // Except if T/F, print in the order of T/F
-    // .filter((item) => item.type === 'multiple')
-  }
 
   return (
     // <li

@@ -83,7 +83,7 @@ export default function Navbar() {
     // </Tooltip>
     // <div className='d-flex flex-column flex-md-row p-3 px-md-4 mb-3'>
     // <div className='container pt-4'>
-    <nav className='navbar navbar-expand-sm navbar-expand-xs navbar-light navbar-fixed-top p-3 p-lg-2'>
+    <nav className='navbar navbar-expand-sm navbar-expand-xs navbar-light navbar-fixed-top p-3 p-lg-3'>
       {/* <div className='collase navbar-collapse'></div> */}
       {/* <div className='collapse navbar-collapse'> */}
       <div className='container-fluid'>

@@ -1,7 +1,7 @@
 import Navbar from './Navbar-Bootstrap';
 import TypeAnimation from 'react-type-animation';
 import Fade from 'react-reveal/Fade';
-import illustrationThinking from '../image/streamline-icon-design-thinking@250x250.svg';
+import illustrationBugFixing from '../image/streamline-icon-fixing-bugs@250x250.SVG';
 
 export default function Intro() {
   return (
@@ -26,7 +26,7 @@ export default function Intro() {
         </div>
         <div className='col-12 col-md-6'>
           <img
-            src={illustrationThinking}
+            src={illustrationBugFixing}
             alt='Quirky illustration of an engineer thinking'
             className='mt-sm-5 my-5 svg-illustration svg-illustration-md'
             // style={{ maxWidth: '75vh' }}
