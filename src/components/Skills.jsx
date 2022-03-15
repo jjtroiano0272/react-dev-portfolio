@@ -59,10 +59,10 @@ export default function Skills() {
           <h4>Web Development Technologies</h4>
           <p>
             APIs, Bootstrap, Node.js, Responsive Web Development, Three.js,
-            React
+            React, Material UI Design
           </p>
           <hr />
-          <h4>Material UI Design Data & Business Analytics</h4>
+          <h4>Business Analytics</h4>
           <p>Microsoft Power BI, TOAD Data Point</p>
         </div>
       </div>
