@@ -32,6 +32,16 @@ const projectsData = [
     altText: 'Screenshot of a tattoo studio redesign mockup.',
   },
   {
+    id: 'vidlyApp',
+    title: 'SaaS - Video rental service',
+    description: `Web app for a larger-scale style of business.`,
+    language: 'React',
+    url: 'https://vidly-app.pages.dev/',
+    git: 'https://github.com/jjtroiano0272/Vidly-app',
+    imgSrc: 'vidly-app-light.png',
+    altText: 'Screenshot of a bespoke video-rental service.',
+  },
+  {
     id: 'triviaApp',
     title: 'RESTful API Trivia',
     description:
