@@ -1,15 +1,15 @@
 #### ALL
 
 - [x] fade in on scroll
-- [ ] Back top top BUTTON at bottom
-- [ ] Animated blob
-- [ ] DESKTOP: Image sizing
 - [x] Typos
+- [x] Back top top BUTTON at bottom
+- [x] DESKTOP: Image sizing
+- [x] MOBILE: 'To top' button that appears after scrolling down x far
+- [x] Mobile formatting is alright. Desktop formatting is completely busted.
+- [ ] Animated blob
 - [ ] Typography standardization: the main title gets h1.title, all others just get h1 in css
-- [ ] MOBILE: 'To top' button that appears after scrolling down x far
 - [ ] MUI options menu needs to register a click on the element if it's ON THE SAME BLOCK, not JUST the text element.
 - [ ] Light/Dark mode consistency & styling
-- [ ] Mobile formatting is alright. Desktop formatting is completely busted.
 - [ ] Navbar: social links don't have resuable code!
 
 #### Intro
@@ -27,14 +27,15 @@
 
 - [x] Gradient overlay
 - [x] Gradient from white to transparent
-- [ ] Image is too big!
+- [x] Image is too big!
 - [ ] Gradient overlay is all ganked on some display/browser (Safari confirmed)
 - [ ] images fill the container (there's one that doesn't and it looks weird)
-- [ ] 'Show more' functionality button after 3 projects'
+- [ ] 'Show more' functionality button after 3 projects' (and someting which tells you how many more projects there are to show)
 
 #### Skills
 
-- [ ] Image on mobile has WAY too much margin
+- [x] Image on mobile has WAY too much margin
+- [ ] Collapsible section for specific frameworks (essentially what my git main page already has, but under a collapsible)
 
 #### Certifications
 
@@ -54,6 +55,10 @@
 - [ ] DESKTOP: Name and email go in same row, side by side
 - [ ] DESKTOP: Size of button
 - [ ] react-reveal shakes on incorrect input
+
+#### Footer
+
+- [ ] Add the rest of my social links
 
 ## Notes
 
