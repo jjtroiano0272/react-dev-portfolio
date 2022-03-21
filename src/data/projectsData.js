@@ -10,6 +10,7 @@ const projectsData = [
     git: 'https://github.com/jjtroiano0272/react-wordle-clone',
     imgSrc: 'gwordle-light.png',
     altText: 'Screenshot of a Wordle Clone.',
+    status: '',
   },
   {
     id: 'travelExperiencesApp',
@@ -20,6 +21,7 @@ const projectsData = [
     git: 'https://github.com/jjtroiano0272/travel-experiences-mockup',
     imgSrc: 'travel-experiences-app-light.png',
     altText: 'Screenshot of a travel experiences app.',
+    status: '',
   },
   {
     id: 'studioMockupApp',
@@ -30,6 +32,7 @@ const projectsData = [
     git: 'https://github.com/jjtroiano0272/mockup_tattoo-studio',
     imgSrc: 'studio-mockup-light.png',
     altText: 'Screenshot of a tattoo studio redesign mockup.',
+    status: '',
   },
   {
     id: 'vidlyApp',
@@ -40,6 +43,7 @@ const projectsData = [
     git: 'https://github.com/jjtroiano0272/Vidly-app',
     imgSrc: 'vidly-app-light.png',
     altText: 'Screenshot of a bespoke video-rental service.',
+    status: 'DOWN (migrating to different host)',
   },
   {
     id: 'triviaApp',
@@ -51,6 +55,7 @@ const projectsData = [
     git: 'https://github.com/jjtroiano0272/react-quiz-app',
     imgSrc: 'trivia-app-light.png',
     altText: 'Screenshot of a trivia app',
+    status: '',
   },
   {
     id: 'tenziesApp',
@@ -62,6 +67,7 @@ const projectsData = [
     imgSrc: 'tenzies-app-light.png',
     altText:
       'Tenzies: the dice game where you hold dice constant and roll until they all match.',
+    status: '',
   },
   {
     id: 'notesApp',
@@ -73,6 +79,7 @@ const projectsData = [
     imgSrc: 'notes-app-light.png',
     altText:
       'A Note-Markdown app, similar to writing a Readme file on GitHub. ',
+    status: '',
   },
   {
     id: 'memeGeneratorApp',
@@ -83,6 +90,7 @@ const projectsData = [
     git: 'https://github.com/jjtroiano0272/meme-geneator',
     imgSrc: 'ml-meme-generator-app-light.png',
     altText: 'Screenshot of a meme generator.',
+    status: '',
   },
   {
     id: 'counterApp',
@@ -93,6 +101,7 @@ const projectsData = [
     git: 'https://github.com/jjtroiano0272/counter-app',
     imgSrc: 'counter-app.png',
     altText: 'Screenshot of a simple counter app.',
+    status: '',
   },
 ];
 // - [x] https://react-trivia-app-jjt.netlify.app

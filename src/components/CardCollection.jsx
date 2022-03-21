@@ -107,21 +107,19 @@ export default function CardCollection() {
                         className='img-gradient'
                         style={{ position: 'relative' }}
                       >
-                        {project.draft === true && (
-                          <>
-                            <MDBBadge
-                              className='mx-2'
-                              color='warning'
-                              style={{
-                                position: 'absolute',
-                                top: '10px',
-                                right: '10px',
-                                color: '#000',
-                              }}
-                            >
-                              DRAFT (in progress)
-                            </MDBBadge>
-                          </>
+                        {project.status && (
+                          <MDBBadge
+                            className='mx-2'
+                            color='warning'
+                            style={{
+                              position: 'absolute',
+                              top: '10px',
+                              right: '10px',
+                              color: '#000',
+                            }}
+                          >
+                            {project.status}
+                          </MDBBadge>
                         )}
 
                         <img
