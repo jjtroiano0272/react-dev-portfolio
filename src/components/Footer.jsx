@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Footer(props) {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'auto',
+      behavior: 'smooth',
       /* you can also use 'auto' behaviour
          in place of 'smooth' */
     });
@@ -42,6 +44,24 @@ export default function Footer(props) {
           </p>
         </div>
       </div>
+
+      {/* <div className='text-center'>
+        <ul className='navbar-nav justify-content-center collapse show navbar-collapse'>
+          <li className='nav-item px-4'>
+            <a href='https://twitter.com/TroianoJonathan' className='nav-link'>
+              <TwitterIcon style={{ fontSize: '2.8em' }} />
+            </a>
+          </li>
+          <li className='nav-item px-4'>
+            <a
+              href='https://stackoverflow.com/users/14810011/jonathan-troiano'
+              className='nav-link'
+            >
+              <FontAwesomeIcon icon='fa-brands fa-stack-overflow' />
+            </a>
+          </li>
+        </ul>
+      </div> */}
     </footer>
   );
 }

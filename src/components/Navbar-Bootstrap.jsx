@@ -21,6 +21,7 @@ import Select from '@mui/material/Select';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -88,12 +89,12 @@ export default function Navbar() {
       {/* <div className='collapse navbar-collapse'> */}
       <div className='container-fluid'>
         <ul className='navbar-nav justify-content-center collapse show navbar-collapse'>
-          <li className='nav-item px-4'>
+          <li className='nav-item px-2 px-md-4'>
             <a href='https://github.com/jjtroiano0272' className='nav-link'>
               <GitHubIcon style={{ fontSize: '2.8em' }} />
             </a>
           </li>
-          <li className='nav-item px-4'>
+          <li className='nav-item px-2 px-md-4'>
             <a
               href='https://www.linkedin.com/in/jonathan-troiano/'
               className='nav-link'
@@ -101,7 +102,12 @@ export default function Navbar() {
               <LinkedInIcon style={{ fontSize: '2.8em' }} />
             </a>
           </li>
-          <li className='nav-item px-4'>
+          <li className='nav-item px-2 px-md-4'>
+            <a href='https://twitter.com/TroianoJonathan' className='nav-link'>
+              <TwitterIcon style={{ fontSize: '2.8em' }} />
+            </a>
+          </li>
+          <li className='nav-item px-2 px-md-4'>
             <a href='#contact' className='nav-link'>
               <EmailIcon style={{ fontSize: '2.8em' }} />
             </a>
